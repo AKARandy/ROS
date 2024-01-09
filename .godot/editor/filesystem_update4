@@ -1,9 +1,1 @@
-res://menu.tscn
 res://world.tscn
-res://player.tscn
-res://ai_scissor.tscn
-res://ai_rock.tscn
-res://ai_paper.tscn
-res://BG.tscn
-res://menu.gd
-res://play.gd
