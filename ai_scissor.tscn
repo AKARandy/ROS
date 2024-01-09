@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://dj57gyal30yvm"]
+
+[ext_resource type="Script" path="res://ai_scissor.gd" id="1_4ljy1"]
+[ext_resource type="Texture2D" uid="uid://ctgy1mq3yt16m" path="res://AssetsTemp/scissor.png" id="1_s1sdn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bawak"]
+size = Vector2(18, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v30ex"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s1sdn")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s1sdn")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_seej2"]
+radius = 119.004
+
+[node name="scissor_ai" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_4ljy1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bawak")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-8.9407e-07, 5.36442e-07)
+scale = Vector2(0.0699301, 0.102273)
+sprite_frames = SubResource("SpriteFrames_v30ex")
+animation = &"Idle"
+
+[node name="PlayerDetection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
+visible = false
+shape = SubResource("CircleShape2D_seej2")
+
+[connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]

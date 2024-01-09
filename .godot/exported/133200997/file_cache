@@ -1,0 +1,11 @@
+res://ai_paper.tscn::1f366020c1f734fb2bcab7e228ed8500::1704731181::res://.godot/exported/133200997/export-315c4e55d5ae22aa33bd9b292ce13d5e-ai_paper.scn
+res://ai_rock.tscn::2e2ce289687339f18a1e91e66b2adf4e::1704730252::res://.godot/exported/133200997/export-07e917d9cea165fb9570b0839f08723b-ai_rock.scn
+res://ai_scissor.tscn::1e9afaac832227b963bebc84d0288dae::1704730252::res://.godot/exported/133200997/export-12e7a2f271f9bede89cf4bd3ce47967e-ai_scissor.scn
+res://background.tscn::de5d6ff27b352dc6a66592cfbdb6f3d6::1704654748::res://.godot/exported/133200997/export-28e4a4dab6f8f98a6419d5be2f1d6925-background.scn
+res://BG.tscn::c29d0d9059c9ec35fa5725165c3f8cd9::1704730252::res://.godot/exported/133200997/export-27f0e2051c98db369292e128e300c528-BG.scn
+res://menu.tscn::949b9a845ac66ac11e0a9d8eea662b6d::1704730251::res://.godot/exported/133200997/export-a4951207776b25ee5c8b2b05c1463587-menu.scn
+res://paper.tscn::4d0e611ec7779cb0a180a14e6c344a23::1704730252::res://.godot/exported/133200997/export-5958e825851fa74369066c3b99dc056a-paper.scn
+res://player.tscn::140e2199d55894540eb0347c0f2963a5::1704731531::res://.godot/exported/133200997/export-36a25e342948d0ceacc500772b5412b3-player.scn
+res://rock.tscn::18c9c9116d22801e899bb8f0669f5580::1704730252::res://.godot/exported/133200997/export-634a346ce00c1b07dc29058060d24b99-rock.scn
+res://scissor.tscn::d49ead10d155fee81dfd7b80d3cd9e6f::1704730252::res://.godot/exported/133200997/export-a95e2667417592b1ca58bcc9ddf56890-scissor.scn
+res://world.tscn::42fdba10afa0a2408edaa8105ad7362d::1704730829::res://.godot/exported/133200997/export-76e0adcbc83681695885bae615f516ae-world.scn

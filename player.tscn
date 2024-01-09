@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8m5c7mw465d"]
+
+[ext_resource type="Texture2D" path="res://icon.svg" id="1_2cgxu"]
+[ext_resource type="Script" path="res://player.gd" id="1_8m1xs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sly2l"]
+size = Vector2(20, 18)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nid7a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2cgxu")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2cgxu")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[node name="player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_8m1xs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_sly2l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.15625, 0.140625)
+sprite_frames = SubResource("SpriteFrames_nid7a")
+animation = &"Idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
