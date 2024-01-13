@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://oavvj4m4mlwn"]
 
-[ext_resource type="PackedScene" path="res://player.tscn" id="1_eql8c"]
-[ext_resource type="PackedScene" path="res://BG.tscn" id="2_3jl4o"]
+[ext_resource type="PackedScene" uid="uid://b8m5c7mw465d" path="res://player.tscn" id="1_eql8c"]
+[ext_resource type="PackedScene" uid="uid://6co8jb0e2w8y" path="res://BG.tscn" id="2_3jl4o"]
 [ext_resource type="Texture2D" uid="uid://cdtigsby2lak3" path="res://AssetsTemp/maze_sprites.PNG" id="3_j3yfc"]
-[ext_resource type="PackedScene" path="res://ai_scissor.tscn" id="4_mapgm"]
+[ext_resource type="PackedScene" uid="uid://dj57gyal30yvm" path="res://ai_scissor.tscn" id="4_mapgm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_numtg"]
 texture = ExtResource("3_j3yfc")
