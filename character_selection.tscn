@@ -1,35 +1,37 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7vuq0ha8ta4a"]
+[gd_scene load_steps=3 format=3 uid="uid://b7vuq0ha8ta4a"]
 
+[ext_resource type="Script" path="res://character_selection.gd" id="1_hgwp6"]
 [ext_resource type="Texture2D" uid="uid://bvan5tlj03jk8" path="res://AssetsTemp/back.png" id="1_p2s6u"]
 
 [node name="character_selection" type="Node2D"]
+script = ExtResource("1_hgwp6")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="background" type="TextureRect" parent="."]
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("1_p2s6u")
 metadata/_edit_lock_ = true
 
-[node name="Button" type="Button" parent="."]
+[node name="rock_select" type="Button" parent="."]
 offset_left = 64.0
 offset_top = 448.0
 offset_right = 320.0
 offset_bottom = 576.0
-text = "Rock"
+text = "Rock (belom jadi)"
 
-[node name="Button2" type="Button" parent="."]
+[node name="paper_select" type="Button" parent="."]
 offset_left = 448.0
 offset_top = 448.0
 offset_right = 704.0
 offset_bottom = 576.0
-text = "Paper"
+text = "Paper (sedang dikerjakan)"
 
-[node name="Button3" type="Button" parent="."]
+[node name="scissor_select" type="Button" parent="."]
 offset_left = 832.0
 offset_top = 448.0
 offset_right = 1088.0
 offset_bottom = 576.0
-text = "Scissor"
+text = "Scissor (belom jadi)"
 
 [node name="Label" type="Label" parent="."]
 offset_top = 104.0
@@ -41,3 +43,7 @@ theme_override_font_sizes/font_size = 100
 text = "Character Selection"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="rock_select" to="." method="_on_rock_select_pressed"]
+[connection signal="pressed" from="paper_select" to="." method="_on_paper_select_pressed"]
+[connection signal="pressed" from="scissor_select" to="." method="_on_scissor_select_pressed"]
