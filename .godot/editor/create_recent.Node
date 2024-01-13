@@ -1,11 +1,11 @@
+Label
+Button
 Node2D
 MarginContainer
 Camera2D
 CanvasLayer
 Node
-Button
 VBoxContainer
-Label
 ColorRect
 CollisionShape2D
 CharacterBody2D

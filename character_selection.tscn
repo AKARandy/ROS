@@ -1,0 +1,43 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7vuq0ha8ta4a"]
+
+[ext_resource type="Texture2D" uid="uid://bvan5tlj03jk8" path="res://AssetsTemp/back.png" id="1_p2s6u"]
+
+[node name="character_selection" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_p2s6u")
+metadata/_edit_lock_ = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 64.0
+offset_top = 448.0
+offset_right = 320.0
+offset_bottom = 576.0
+text = "Rock"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 448.0
+offset_top = 448.0
+offset_right = 704.0
+offset_bottom = 576.0
+text = "Paper"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 832.0
+offset_top = 448.0
+offset_right = 1088.0
+offset_bottom = 576.0
+text = "Scissor"
+
+[node name="Label" type="Label" parent="."]
+offset_top = 104.0
+offset_right = 1152.0
+offset_bottom = 288.0
+theme_override_colors/font_color = Color(0.745098, 0.0196078, 0.396078, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "Character Selection"
+horizontal_alignment = 1
+vertical_alignment = 1
