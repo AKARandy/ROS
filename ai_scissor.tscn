@@ -26,7 +26,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_seej2"]
-radius = 119.004
+radius = 92.1954
 
 [node name="scissor_ai" type="CharacterBody2D"]
 motion_mode = 1
@@ -44,7 +44,6 @@ animation = &"Idle"
 [node name="PlayerDetection" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
-visible = false
 shape = SubResource("CircleShape2D_seej2")
 
 [connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
