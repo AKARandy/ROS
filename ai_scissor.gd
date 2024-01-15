@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var chase = false
 const speed = 150
-var player
+var the_chased
 
 const CENTER = Vector2(450,300)
 enum {FLEEING, ROAMING}
@@ -12,7 +12,7 @@ var random_target_pos : Vector2 = Vector2(450,300)
 
 func _physics_process(delta):
 	if chase == true:
-		var direction = (player.position - self.position).normalized()
+		var direction = (the_chased.position - self.position).normalized()
 		velocity.x = direction.x * speed
 		velocity.y = direction.y * speed
 		#if (player.position.x - position.x) < 0:
@@ -30,24 +30,31 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_player_detection_body_entered(body):
-	print("chase: " + str(chase))
-	print("state: " + str(state))
 	if body.name == "player":
 		if Global.role == "paper":
-			player = body
+			the_chased = body
 			chase = true
 		if Global.role == "rock":
 			chase = false
 			state = FLEEING
 			body_to_flee_from = body
-			print("run")
+	if body.name == "ai_paper":
+		the_chased = body
+		chase = true
+	if body.name == "ai_rock":
+		chase = false
+		state = FLEEING
+		body_to_flee_from = body
 
 func _on_player_detection_body_exited(body):
-	print("chase: " + str(chase))
-	print("state: " + str(state))
 	if body.name == "player":
 		if Global.role == "paper":
 			chase = false
 		if Global.role == "rock":
 			state = ROAMING
-			random_target_pos = position 
+			random_target_pos = position
+	if body.name == "ai_paper":
+		chase = false
+	if body.name == "ai_rock":
+		state = ROAMING
+		random_target_pos = position
