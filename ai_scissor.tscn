@@ -13,7 +13,7 @@ animations = [{
 "texture": ExtResource("1_s1sdn")
 }],
 "loop": true,
-"name": &"Idle",
+"name": &"idle",
 "speed": 5.0
 }, {
 "frames": [{
@@ -21,7 +21,7 @@ animations = [{
 "texture": ExtResource("1_s1sdn")
 }],
 "loop": true,
-"name": &"Run",
+"name": &"run",
 "speed": 5.0
 }]
 
@@ -39,7 +39,7 @@ shape = SubResource("RectangleShape2D_bawak")
 position = Vector2(-8.9407e-07, 5.36442e-07)
 scale = Vector2(0.0699301, 0.102273)
 sprite_frames = SubResource("SpriteFrames_v30ex")
-animation = &"Idle"
+animation = &"run"
 
 [node name="PlayerDetection" type="Area2D" parent="."]
 

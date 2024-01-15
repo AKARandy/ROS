@@ -33,10 +33,10 @@ func _on_player_detection_body_entered(body):
 	print("chase: " + str(chase))
 	print("state: " + str(state))
 	if body.name == "player":
-		if Global.role == "paper":
+		if Global.role == "scissor":
 			player = body
 			chase = true
-		if Global.role == "rock":
+		if Global.role == "paper":
 			chase = false
 			state = FLEEING
 			body_to_flee_from = body
@@ -46,8 +46,8 @@ func _on_player_detection_body_exited(body):
 	print("chase: " + str(chase))
 	print("state: " + str(state))
 	if body.name == "player":
-		if Global.role == "paper":
+		if Global.role == "scissor":
 			chase = false
-		if Global.role == "rock":
+		if Global.role == "paper":
 			state = ROAMING
 			random_target_pos = position 

@@ -1,3 +1,49 @@
-[gd_scene format=3 uid="uid://gqm3iticl6v5"]
+[gd_scene load_steps=6 format=3 uid="uid://gqm3iticl6v5"]
 
-[node name="paper_ai" type="Node2D"]
+[ext_resource type="Script" path="res://ai_paper.gd" id="1_fxxto"]
+[ext_resource type="Texture2D" uid="uid://bnmp10mqyksj0" path="res://AssetsTemp/paper.jpg" id="2_c3r3d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f0byj"]
+size = Vector2(18, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w83ex"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_c3r3d")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_c3r3d")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_imux2"]
+radius = 92.1954
+
+[node name="paper_ai" type="CharacterBody2D"]
+script = ExtResource("1_fxxto")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_f0byj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -2.38419e-07)
+scale = Vector2(0.05, 0.0444444)
+sprite_frames = SubResource("SpriteFrames_w83ex")
+animation = &"idle"
+
+[node name="PlayerDetection" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
+shape = SubResource("CircleShape2D_imux2")
+
+[connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]

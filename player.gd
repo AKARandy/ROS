@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const speed = 200
-var role
+
 @onready var _animated_sprite = $AnimatedSprite2D
 
 func _physics_process(delta):
@@ -17,9 +17,9 @@ func _physics_process(delta):
 		velocity.y += speed
 	
 	if Global.role == "rock":
-		_animated_sprite.play("idle_paper")
+		_animated_sprite.play("idle_rock")
 	if Global.role == "paper":
-		pass
+		_animated_sprite.play("idle_paper")
 	if Global.role == "scissor":
-		pass
+		_animated_sprite.play("idle_scissor")
 	move_and_slide()

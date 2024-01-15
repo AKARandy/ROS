@@ -1,3 +1,4 @@
+CharacterBody2D
 Label
 Button
 Node2D
@@ -8,7 +9,6 @@ Node
 VBoxContainer
 ColorRect
 CollisionShape2D
-CharacterBody2D
 Area2D
 AnimatedSprite2D
 PointLight2D
