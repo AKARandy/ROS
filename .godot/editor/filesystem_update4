@@ -9,3 +9,7 @@ res://character_selection.tscn
 res://BG.tscn
 res://ai_paper.gd
 res://ai_rock.gd
+res://character_selection.gd
+res://Global.gd
+res://menu.gd
+res://player.gd
