@@ -1,16 +1,39 @@
-[gd_scene load_steps=6 format=3 uid="uid://c02fr6najblmh"]
+[gd_scene load_steps=17 format=3 uid="uid://c02fr6najblmh"]
 
 [ext_resource type="Script" path="res://ai_rock.gd" id="1_5pj1e"]
-[ext_resource type="Texture2D" uid="uid://bn3ln3jaxqirm" path="res://AssetsTemp/rock.jpg" id="2_x3tqp"]
+[ext_resource type="Texture2D" uid="uid://hldmrvyrqet5" path="res://ROSAssets/Character/Batu/Idle/batu-berdiri-1.png" id="2_fhae5"]
+[ext_resource type="Texture2D" uid="uid://lwkao3l5n03s" path="res://ROSAssets/Character/Batu/Idle/batu-berdiri-2.png" id="3_fpd0u"]
+[ext_resource type="Texture2D" uid="uid://b8oksf3dtoimo" path="res://ROSAssets/Character/Batu/Idle/batu-berdiri-3.png" id="4_w7sqi"]
+[ext_resource type="Texture2D" uid="uid://dwc8wnxdrfk2n" path="res://ROSAssets/Character/Batu/Idle/batu-berdiri-4.png" id="5_0mifx"]
+[ext_resource type="Texture2D" uid="uid://c70rc8w5ygtfd" path="res://ROSAssets/Character/Batu/Run/batu-lari-1.png" id="6_t42dn"]
+[ext_resource type="Texture2D" uid="uid://ma1718kk3n47" path="res://ROSAssets/Character/Batu/Run/batu-lari-2.png" id="7_dtnq7"]
+[ext_resource type="Texture2D" uid="uid://dae6eef7e7772" path="res://ROSAssets/Character/Batu/Run/batu-lari-3.png" id="8_0dorv"]
+[ext_resource type="Texture2D" uid="uid://8fqniynonnd8" path="res://ROSAssets/Character/Batu/Run/batu-lari-4.png" id="9_jah0u"]
+[ext_resource type="Texture2D" uid="uid://dsobo1rbpojbd" path="res://ROSAssets/Character/Batu/Run/batu-lari-5.png" id="10_1v1qb"]
+[ext_resource type="Texture2D" uid="uid://cvrfxf7sm0svv" path="res://ROSAssets/Character/Batu/Run/batu-lari-6.png" id="11_ggq5f"]
+[ext_resource type="Texture2D" uid="uid://desot5xc0tdif" path="res://ROSAssets/Character/Batu/Run/batu-lari-7.png" id="12_4m0ke"]
+[ext_resource type="Texture2D" uid="uid://dswg0d5homfw1" path="res://ROSAssets/Character/Batu/Run/batu-lari-8.png" id="13_vvuod"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1uj1o"]
-size = Vector2(18, 16)
+size = Vector2(32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_trdin"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_x3tqp")
+"texture": ExtResource("2_fhae5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fpd0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_w7sqi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0mifx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fhae5")
 }],
 "loop": true,
 "name": &"idle",
@@ -18,11 +41,32 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_x3tqp")
+"texture": ExtResource("6_t42dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dtnq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_0dorv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jah0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1v1qb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ggq5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4m0ke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vvuod")
 }],
 "loop": true,
 "name": &"run",
-"speed": 5.0
+"speed": 9.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_r5x3p"]
@@ -35,12 +79,15 @@ script = ExtResource("1_5pj1e")
 shape = SubResource("RectangleShape2D_1uj1o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-3.57628e-07, 4.76837e-07)
-scale = Vector2(0.05, 0.0444444)
+position = Vector2(0, -1)
+scale = Vector2(0.038, 0.038)
 sprite_frames = SubResource("SpriteFrames_trdin")
-animation = &"idle"
+animation = &"run"
+autoplay = "idle"
+frame_progress = 0.648954
 
 [node name="PlayerDetection" type="Area2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
 shape = SubResource("CircleShape2D_r5x3p")

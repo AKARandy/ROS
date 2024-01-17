@@ -1,3 +1,7 @@
+TileMap
+Panel
+CollisionShape2D
+Area2D
 CharacterBody2D
 Label
 Button
@@ -8,7 +12,3 @@ CanvasLayer
 Node
 VBoxContainer
 ColorRect
-CollisionShape2D
-Area2D
-AnimatedSprite2D
-PointLight2D
