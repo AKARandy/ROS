@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var chase = false
-const speed = 100
+const speed = 150
 var the_chased
 
 const CENTER = Vector2(450,300)
@@ -15,8 +15,7 @@ func _physics_process(delta):
 		var direction = (the_chased.position - self.position).normalized()
 		velocity.x = direction.x * speed
 		velocity.y = direction.y * speed
-		#if (player.position.x - position.x) < 0:
-			#pass
+
 	if chase == false:
 		match state:
 			FLEEING:

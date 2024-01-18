@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://gqm3iticl6v5"]
 
-[ext_resource type="Script" path="res://entities/enemy/ai_paper.gd" id="1_fxxto"]
+[ext_resource type="Script" path="res://entities/enemy/ai_papper.gd" id="1_fxxto"]
 [ext_resource type="Texture2D" uid="uid://c5128ghuof43c" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-1.png" id="2_3sdek"]
 [ext_resource type="Texture2D" uid="uid://b8yw2wbd5gga5" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-2.png" id="3_qbxwk"]
 [ext_resource type="Texture2D" uid="uid://bqbsd7pudlju0" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-3.png" id="4_mh02j"]
