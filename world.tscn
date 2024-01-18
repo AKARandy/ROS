@@ -22,4 +22,4 @@ position = Vector2(488, 376)
 position = Vector2(680, 384)
 
 [node name="ai_paper" parent="Mobs" instance=ExtResource("6_2ywfh")]
-position = Vector2(512, 264)
+position = Vector2(496, 320)

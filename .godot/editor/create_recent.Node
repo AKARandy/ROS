@@ -12,3 +12,5 @@ CanvasLayer
 Node
 VBoxContainer
 ColorRect
+AnimatedSprite2D
+PointLight2D
