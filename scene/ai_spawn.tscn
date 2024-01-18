@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3pilqu2xxlye"]
+
+[ext_resource type="Script" path="res://scene/ai_spawn.gd" id="1_evjxx"]
+
+[node name="ai_spawn" type="Node2D"]
+script = ExtResource("1_evjxx")
+
+[node name="spawn_timer" type="Timer" parent="."]

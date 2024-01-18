@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://gqm3iticl6v5"]
+[gd_scene load_steps=18 format=3 uid="uid://gqm3iticl6v5"]
 
 [ext_resource type="Script" path="res://entities/enemy/ai_papper.gd" id="1_fxxto"]
 [ext_resource type="Texture2D" uid="uid://c5128ghuof43c" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-1.png" id="2_3sdek"]
@@ -69,6 +69,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_imux2"]
 radius = 92.1954
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sx3sr"]
+size = Vector2(34, 34)
+
 [node name="ai_paper" type="CharacterBody2D"]
 script = ExtResource("1_fxxto")
 
@@ -88,5 +91,11 @@ visible = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
 shape = SubResource("CircleShape2D_imux2")
 
+[node name="PlayerDeath" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDeath"]
+shape = SubResource("RectangleShape2D_sx3sr")
+
 [connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
 [connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]
+[connection signal="body_entered" from="PlayerDeath" to="." method="_on_player_death_body_entered"]

@@ -1,8 +1,8 @@
 CollisionShape2D
+Area2D
 CharacterBody2D
 TileMap
 Panel
-Area2D
 Label
 Button
 Node2D

@@ -33,3 +33,6 @@ res://menus/menu.gd
 res://entities/player/player.gd
 res://scene/world.tscn
 res://entities/enemy/ai_papper.gd
+res://scene/ai_spawn.gd
+res://scene/world.gd
+res://scene/ai_spawn.tscn

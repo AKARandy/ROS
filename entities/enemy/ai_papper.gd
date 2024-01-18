@@ -61,3 +61,15 @@ func _on_player_detection_body_exited(body):
 	if body.name == "ai_scissor":
 		state = ROAMING
 		random_target_pos = position
+
+
+func _on_player_death_body_entered(body):
+	if body.name == "player":
+		if EntityRoles.role == EntityRoles.Roles.SCISSOR:
+			chase = false
+			the_chased = null
+			self.queue_free()
+	if body.name == "ai_scissor":
+		chase = false
+		the_chased = null
+		self.queue_free()
