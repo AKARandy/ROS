@@ -1,89 +1,86 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1705524283
-ai_paper.gd::GDScript::-1::1705336732::0::1::::<>CharacterBody2D<>::
-ai_paper.tscn::PackedScene::454942161940395420::1705520650::0::1::::<><>::res://ai_paper.gd<>uid://c5128ghuof43c::::res://ROSAssets/Character/Kertas/Idle/kertas-berdiri-1.png<>uid://b8yw2wbd5gga5::::res://ROSAssets/Character/Kertas/Idle/kertas-berdiri-2.png<>uid://bqbsd7pudlju0::::res://ROSAssets/Character/Kertas/Idle/kertas-berdiri-3.png<>uid://cis1eyfv5ubva::::res://ROSAssets/Character/Kertas/Idle/kertas-berdiri-4.png<>uid://4tcy6xmfjco6::::res://ROSAssets/Character/Kertas/Run/kertas-lari-1.png<>uid://defqjpb0sts6x::::res://ROSAssets/Character/Kertas/Run/kertas-lari-2.png<>uid://d0mvh3t8o1m3j::::res://ROSAssets/Character/Kertas/Run/kertas-lari-3.png<>uid://bpopykephehe0::::res://ROSAssets/Character/Kertas/Run/kertas-lari-4.png<>uid://un24pfocxkeg::::res://ROSAssets/Character/Kertas/Run/kertas-lari-5.png<>uid://dfvb6xcr7h5jd::::res://ROSAssets/Character/Kertas/Run/kertas-lari-6.png<>uid://d3td0m5xk868a::::res://ROSAssets/Character/Kertas/Run/kertas-lari-7.png<>uid://bs77qacerhtnr::::res://ROSAssets/Character/Kertas/Run/kertas-lari-8.png
-ai_rock.gd::GDScript::-1::1705336732::0::1::::<>CharacterBody2D<>::
-ai_rock.tscn::PackedScene::6583636249475232547::1705520650::0::1::::<><>::res://ai_rock.gd<>uid://hldmrvyrqet5::::res://ROSAssets/Character/Batu/Idle/batu-berdiri-1.png<>uid://lwkao3l5n03s::::res://ROSAssets/Character/Batu/Idle/batu-berdiri-2.png<>uid://b8oksf3dtoimo::::res://ROSAssets/Character/Batu/Idle/batu-berdiri-3.png<>uid://dwc8wnxdrfk2n::::res://ROSAssets/Character/Batu/Idle/batu-berdiri-4.png<>uid://c70rc8w5ygtfd::::res://ROSAssets/Character/Batu/Run/batu-lari-1.png<>uid://ma1718kk3n47::::res://ROSAssets/Character/Batu/Run/batu-lari-2.png<>uid://dae6eef7e7772::::res://ROSAssets/Character/Batu/Run/batu-lari-3.png<>uid://8fqniynonnd8::::res://ROSAssets/Character/Batu/Run/batu-lari-4.png<>uid://dsobo1rbpojbd::::res://ROSAssets/Character/Batu/Run/batu-lari-5.png<>uid://cvrfxf7sm0svv::::res://ROSAssets/Character/Batu/Run/batu-lari-6.png<>uid://desot5xc0tdif::::res://ROSAssets/Character/Batu/Run/batu-lari-7.png<>uid://dswg0d5homfw1::::res://ROSAssets/Character/Batu/Run/batu-lari-8.png
-ai_scissor.gd::GDScript::-1::1705445446::0::1::::<>CharacterBody2D<>::
-ai_scissor.tscn::PackedScene::7854847896073965726::1705520650::0::1::::<><>::res://ai_scissor.gd<>uid://b07qcfbf1ny08::::res://ROSAssets/Character/Gunting/Idle/gunting-berdiri-1.png<>uid://bcmfv6hu5bilt::::res://ROSAssets/Character/Gunting/Idle/gunting-berdiri-2.png<>uid://btv2jb8laccf2::::res://ROSAssets/Character/Gunting/Idle/gunting-berdiri-3.png<>uid://dbpjfy801oeg8::::res://ROSAssets/Character/Gunting/Idle/gunting-berdiri-4.png<>uid://dg8076b7tm6l0::::res://ROSAssets/Character/Gunting/Run/gunting-lari-1.png<>uid://d0ml7g5c5e4s7::::res://ROSAssets/Character/Gunting/Run/gunting-lari-2.png<>uid://cu5a34cve71aa::::res://ROSAssets/Character/Gunting/Run/gunting-lari-3.png<>uid://c6lumdbt263u3::::res://ROSAssets/Character/Gunting/Run/gunting-lari-4.png<>uid://l4vb8cewv0aq::::res://ROSAssets/Character/Gunting/Run/gunting-lari-5.png<>uid://bcf0cym2rbaho::::res://ROSAssets/Character/Gunting/Run/gunting-lari-6.png<>uid://b3o3naq8rww4c::::res://ROSAssets/Character/Gunting/Run/gunting-lari-7.png<>uid://ct4cq10kyul3::::res://ROSAssets/Character/Gunting/Run/gunting-lari-8.png
-character_selection.gd::GDScript::-1::1705336732::0::1::::<>Node2D<>::
-character_selection.tscn::PackedScene::4677059849445431618::1705336732::0::1::::<><>::res://character_selection.gd<>uid://bvan5tlj03jk8::::res://AssetsTemp/back.png
-Global.gd::GDScript::-1::1705336732::0::1::::<>Node<>::
+::res://::1705564628
 icon.svg::CompressedTexture2D::7879007027423979964::1704891362::1705018577::1::::<><>::
-menu.gd::GDScript::-1::1705336732::0::1::::<>Control<>::
-menu.tscn::PackedScene::6371584878692898491::1705425230::0::1::::<><>::res://menu.gd<>res://play.gd
-paper.tscn::PackedScene::3806124494920466003::1704891362::0::1::::<><>::
-play.gd::GDScript::-1::1704891362::0::1::::<>Button<>::
-player.gd::GDScript::-1::1705336732::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::139095642308592195::1705420148::0::1::::<><>::uid://dkiwdhmlgj3ca::::res://icon.svg<>res://player.gd<>uid://bnmp10mqyksj0::::res://AssetsTemp/paper.jpg<>uid://bn3ln3jaxqirm::::res://AssetsTemp/rock.jpg<>uid://bamq2nj33f2mv::::res://AssetsTemp/scissor (1).png
-rock.tscn::PackedScene::4430652878746823677::1705162038::0::1::::<><>::
-scissor.tscn::PackedScene::7536473151578189307::1705420148::0::1::::<><>::
-world.tscn::PackedScene::983956887546495253::1705520651::0::1::::<><>::uid://b8m5c7mw465d::::res://player.tscn<>uid://6co8jb0e2w8y::::res://Background/SkyBg.tscn<>uid://cdtigsby2lak3::::res://AssetsTemp/maze_sprites.PNG<>uid://dj57gyal30yvm::::res://ai_scissor.tscn<>uid://c02fr6najblmh::::res://ai_rock.tscn<>uid://gqm3iticl6v5::::res://ai_paper.tscn
-::res://AssetsTemp/::1705336732
-back.png::CompressedTexture2D::3861230310194831849::1704891362::1704891362::1::::<><>::
-maze_sprites.PNG::CompressedTexture2D::5023128474425067064::1704891362::1704891362::1::::<><>::
-paper.jpg::CompressedTexture2D::3324606701950123235::1704891362::1704891362::1::::<><>::
-rock.jpg::CompressedTexture2D::3357370814930808734::1704891362::1704891362::1::::<><>::
-scissor (1).png::CompressedTexture2D::2412213603078143041::1705336732::1705336732::1::::<><>::
-scissor.png::CompressedTexture2D::6120319957803212714::1704891362::1704891362::1::::<><>::
-::res://Background/::1705445446
+::res://Background/::1705564173
 SkyBg.gd::GDScript::-1::1705425106::0::1::::<>ParallaxBackground<>::
-SkyBg.tscn::PackedScene::2180892352781989962::1705425230::0::1::::<><>::uid://bvan5tlj03jk8::::res://AssetsTemp/back.png<>res://Background/SkyBg.gd
-::res://maps/::1705488665
-maps1.tscn::PackedScene::2809200824419311703::1705488665::0::1::::<><>::
-::res://ROSAssets/::1705524283
-::res://ROSAssets/Character/::1705490105
-::res://ROSAssets/Character/Batu/::1705488849
-::res://ROSAssets/Character/Batu/Idle/::1705488890
-batu-berdiri-1.png::CompressedTexture2D::514234567717689604::1705488706::1705488890::1::::<><>::
-batu-berdiri-2.png::CompressedTexture2D::818101539657182166::1705488706::1705488889::1::::<><>::
-batu-berdiri-3.png::CompressedTexture2D::4732193432556490310::1705488706::1705488889::1::::<><>::
-batu-berdiri-4.png::CompressedTexture2D::8709589033344622627::1705488706::1705488889::1::::<><>::
-::res://ROSAssets/Character/Batu/Run/::1705488889
-batu-lari-1.png::CompressedTexture2D::7071531336771217129::1705488706::1705488889::1::::<><>::
-batu-lari-2.png::CompressedTexture2D::843903327927756974::1705488706::1705488889::1::::<><>::
-batu-lari-3.png::CompressedTexture2D::7169409151324919643::1705488706::1705488889::1::::<><>::
-batu-lari-4.png::CompressedTexture2D::2327548873902397091::1705488706::1705488889::1::::<><>::
-batu-lari-5.png::CompressedTexture2D::8451649635162977929::1705488706::1705488888::1::::<><>::
-batu-lari-6.png::CompressedTexture2D::6282246476712913135::1705488706::1705488888::1::::<><>::
-batu-lari-7.png::CompressedTexture2D::7478061804543467849::1705488706::1705488888::1::::<><>::
-batu-lari-8.png::CompressedTexture2D::8468486698208840122::1705488706::1705488887::1::::<><>::
-::res://ROSAssets/Character/Gunting/::1705488864
-::res://ROSAssets/Character/Gunting/Idle/::1705488888
-gunting-berdiri-1.png::CompressedTexture2D::4208177170669913275::1705488706::1705488888::1::::<><>::
-gunting-berdiri-2.png::CompressedTexture2D::2551913630640051153::1705488706::1705488887::1::::<><>::
-gunting-berdiri-3.png::CompressedTexture2D::3765016180602576893::1705488706::1705488887::1::::<><>::
-gunting-berdiri-4.png::CompressedTexture2D::7260973255642789485::1705488706::1705488887::1::::<><>::
-::res://ROSAssets/Character/Gunting/Run/::1705488886
-gunting-lari-1.png::CompressedTexture2D::7650096280264079067::1705488707::1705488886::1::::<><>::
-gunting-lari-2.png::CompressedTexture2D::8939481069019603512::1705488707::1705488886::1::::<><>::
-gunting-lari-3.png::CompressedTexture2D::6238601102225520200::1705488706::1705488886::1::::<><>::
-gunting-lari-4.png::CompressedTexture2D::6972639604857512060::1705488706::1705488886::1::::<><>::
-gunting-lari-5.png::CompressedTexture2D::833222814100249340::1705488706::1705488886::1::::<><>::
-gunting-lari-6.png::CompressedTexture2D::2538643036494006260::1705488706::1705488886::1::::<><>::
-gunting-lari-7.png::CompressedTexture2D::4382332911472917780::1705488706::1705488886::1::::<><>::
-gunting-lari-8.png::CompressedTexture2D::181366110669970658::1705488706::1705488886::1::::<><>::
-::res://ROSAssets/Character/Kertas/::1705488831
-::res://ROSAssets/Character/Kertas/Idle/::1705490109
-kertas-berdiri-1.png::CompressedTexture2D::6933879115017663862::1705488706::1705490109::1::::<><>::
-kertas-berdiri-2.png::CompressedTexture2D::4753582737357045478::1705488706::1705490109::1::::<><>::
-kertas-berdiri-3.png::CompressedTexture2D::3512606527739621805::1705488706::1705490109::1::::<><>::
-kertas-berdiri-4.png::CompressedTexture2D::5373097970330532270::1705488706::1705490109::1::::<><>::
-::res://ROSAssets/Character/Kertas/Run/::1705490110
-kertas-lari-1.png::CompressedTexture2D::2074865600175944667::1705488707::1705490109::1::::<><>::
-kertas-lari-2.png::CompressedTexture2D::7451327648986903957::1705488707::1705490109::1::::<><>::
-kertas-lari-3.png::CompressedTexture2D::8940044734008462465::1705488706::1705490109::1::::<><>::
-kertas-lari-4.png::CompressedTexture2D::3469108772869408429::1705488706::1705490109::1::::<><>::
-kertas-lari-5.png::CompressedTexture2D::1432305726605319822::1705488707::1705490110::1::::<><>::
-kertas-lari-6.png::CompressedTexture2D::7553675490650675845::1705488706::1705490110::1::::<><>::
-kertas-lari-7.png::CompressedTexture2D::9164000323781313766::1705488707::1705490110::1::::<><>::
-kertas-lari-8.png::CompressedTexture2D::3717851477072967775::1705488707::1705490110::1::::<><>::
-::res://ROSAssets/Maps Texture/::1705524272
-TX Plant.png::CompressedTexture2D::4368266988175417056::1705442596::1705524283::1::::<><>::
-TX Props.png::CompressedTexture2D::3643641443375207633::1705442596::1705524283::1::::<><>::
-TX Shadow Plant.png::CompressedTexture2D::6906233249812673677::1705442596::1705524283::1::::<><>::
-TX Shadow.png::CompressedTexture2D::5019493246189377345::1705442596::1705524283::1::::<><>::
-TX Struct.png::CompressedTexture2D::3822944192878009150::1705442596::1705524283::1::::<><>::
-TX Tileset Grass.png::CompressedTexture2D::2837869869716480493::1705442596::1705524283::1::::<><>::
-TX Tileset Stone Ground.png::CompressedTexture2D::3223242750263460022::1705442596::1705524283::1::::<><>::
-TX Tileset Wall.png::CompressedTexture2D::2757714773138738065::1705442596::1705524283::1::::<><>::
+SkyBg.tscn::PackedScene::2180892352781989962::1705564173::0::1::::<><>::uid://bvan5tlj03jk8::::res://game_assets/Background/Blue Ocean Sky.png<>res://Background/SkyBg.gd
+::res://entities/::1705564200
+::res://entities/enemy/::1705564569
+ai_paper.gd::GDScript::-1::1705564501::0::1::::<>CharacterBody2D<>::
+ai_paper.tscn::PackedScene::454942161940395420::1705564555::0::1::::<><>::res://entities/enemy/ai_paper.gd<>uid://c5128ghuof43c::::res://game_assets/Character/Kertas/Idle/kertas-berdiri-1.png<>uid://b8yw2wbd5gga5::::res://game_assets/Character/Kertas/Idle/kertas-berdiri-2.png<>uid://bqbsd7pudlju0::::res://game_assets/Character/Kertas/Idle/kertas-berdiri-3.png<>uid://cis1eyfv5ubva::::res://game_assets/Character/Kertas/Idle/kertas-berdiri-4.png<>uid://4tcy6xmfjco6::::res://game_assets/Character/Kertas/Run/kertas-lari-1.png<>uid://defqjpb0sts6x::::res://game_assets/Character/Kertas/Run/kertas-lari-2.png<>uid://d0mvh3t8o1m3j::::res://game_assets/Character/Kertas/Run/kertas-lari-3.png<>uid://bpopykephehe0::::res://game_assets/Character/Kertas/Run/kertas-lari-4.png<>uid://un24pfocxkeg::::res://game_assets/Character/Kertas/Run/kertas-lari-5.png<>uid://dfvb6xcr7h5jd::::res://game_assets/Character/Kertas/Run/kertas-lari-6.png<>uid://d3td0m5xk868a::::res://game_assets/Character/Kertas/Run/kertas-lari-7.png<>uid://bs77qacerhtnr::::res://game_assets/Character/Kertas/Run/kertas-lari-8.png
+ai_rock.gd::GDScript::-1::1705564501::0::1::::<>CharacterBody2D<>::
+ai_rock.tscn::PackedScene::6583636249475232547::1705564569::0::1::::<><>::res://entities/enemy/ai_rock.gd<>uid://hldmrvyrqet5::::res://game_assets/Character/Batu/Idle/batu-berdiri-1.png<>uid://lwkao3l5n03s::::res://game_assets/Character/Batu/Idle/batu-berdiri-2.png<>uid://b8oksf3dtoimo::::res://game_assets/Character/Batu/Idle/batu-berdiri-3.png<>uid://dwc8wnxdrfk2n::::res://game_assets/Character/Batu/Idle/batu-berdiri-4.png<>uid://c70rc8w5ygtfd::::res://game_assets/Character/Batu/Run/batu-lari-1.png<>uid://ma1718kk3n47::::res://game_assets/Character/Batu/Run/batu-lari-2.png<>uid://dae6eef7e7772::::res://game_assets/Character/Batu/Run/batu-lari-3.png<>uid://8fqniynonnd8::::res://game_assets/Character/Batu/Run/batu-lari-4.png<>uid://dsobo1rbpojbd::::res://game_assets/Character/Batu/Run/batu-lari-5.png<>uid://cvrfxf7sm0svv::::res://game_assets/Character/Batu/Run/batu-lari-6.png<>uid://desot5xc0tdif::::res://game_assets/Character/Batu/Run/batu-lari-7.png<>uid://dswg0d5homfw1::::res://game_assets/Character/Batu/Run/batu-lari-8.png
+ai_scissor.gd::GDScript::-1::1705564501::0::1::::<>CharacterBody2D<>::
+ai_scissor.tscn::PackedScene::7854847896073965726::1705564555::0::1::::<><>::res://entities/enemy/ai_scissor.gd<>uid://b07qcfbf1ny08::::res://game_assets/Character/Gunting/Idle/gunting-berdiri-1.png<>uid://bcmfv6hu5bilt::::res://game_assets/Character/Gunting/Idle/gunting-berdiri-2.png<>uid://btv2jb8laccf2::::res://game_assets/Character/Gunting/Idle/gunting-berdiri-3.png<>uid://dbpjfy801oeg8::::res://game_assets/Character/Gunting/Idle/gunting-berdiri-4.png<>uid://dg8076b7tm6l0::::res://game_assets/Character/Gunting/Run/gunting-lari-1.png<>uid://d0ml7g5c5e4s7::::res://game_assets/Character/Gunting/Run/gunting-lari-2.png<>uid://cu5a34cve71aa::::res://game_assets/Character/Gunting/Run/gunting-lari-3.png<>uid://c6lumdbt263u3::::res://game_assets/Character/Gunting/Run/gunting-lari-4.png<>uid://l4vb8cewv0aq::::res://game_assets/Character/Gunting/Run/gunting-lari-5.png<>uid://bcf0cym2rbaho::::res://game_assets/Character/Gunting/Run/gunting-lari-6.png<>uid://b3o3naq8rww4c::::res://game_assets/Character/Gunting/Run/gunting-lari-7.png<>uid://ct4cq10kyul3::::res://game_assets/Character/Gunting/Run/gunting-lari-8.png
+::res://entities/player/::1705564501
+player.gd::GDScript::-1::1705564501::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::139095642308592195::1705564206::0::1::::<><>::res://entities/player/player.gd<>uid://c5128ghuof43c::::res://game_assets/Character/Kertas/Idle/kertas-berdiri-1.png<>uid://b8yw2wbd5gga5::::res://game_assets/Character/Kertas/Idle/kertas-berdiri-2.png<>uid://bqbsd7pudlju0::::res://game_assets/Character/Kertas/Idle/kertas-berdiri-3.png<>uid://cis1eyfv5ubva::::res://game_assets/Character/Kertas/Idle/kertas-berdiri-4.png<>uid://hldmrvyrqet5::::res://game_assets/Character/Batu/Idle/batu-berdiri-1.png<>uid://lwkao3l5n03s::::res://game_assets/Character/Batu/Idle/batu-berdiri-2.png<>uid://b8oksf3dtoimo::::res://game_assets/Character/Batu/Idle/batu-berdiri-3.png<>uid://dwc8wnxdrfk2n::::res://game_assets/Character/Batu/Idle/batu-berdiri-4.png<>uid://b07qcfbf1ny08::::res://game_assets/Character/Gunting/Idle/gunting-berdiri-1.png<>uid://bcmfv6hu5bilt::::res://game_assets/Character/Gunting/Idle/gunting-berdiri-2.png<>uid://btv2jb8laccf2::::res://game_assets/Character/Gunting/Idle/gunting-berdiri-3.png<>uid://dbpjfy801oeg8::::res://game_assets/Character/Gunting/Idle/gunting-berdiri-4.png<>uid://4tcy6xmfjco6::::res://game_assets/Character/Kertas/Run/kertas-lari-1.png<>uid://defqjpb0sts6x::::res://game_assets/Character/Kertas/Run/kertas-lari-2.png<>uid://d0mvh3t8o1m3j::::res://game_assets/Character/Kertas/Run/kertas-lari-3.png<>uid://bpopykephehe0::::res://game_assets/Character/Kertas/Run/kertas-lari-4.png<>uid://un24pfocxkeg::::res://game_assets/Character/Kertas/Run/kertas-lari-5.png<>uid://dfvb6xcr7h5jd::::res://game_assets/Character/Kertas/Run/kertas-lari-6.png<>uid://d3td0m5xk868a::::res://game_assets/Character/Kertas/Run/kertas-lari-7.png<>uid://bs77qacerhtnr::::res://game_assets/Character/Kertas/Run/kertas-lari-8.png<>uid://c70rc8w5ygtfd::::res://game_assets/Character/Batu/Run/batu-lari-1.png<>uid://ma1718kk3n47::::res://game_assets/Character/Batu/Run/batu-lari-2.png<>uid://dae6eef7e7772::::res://game_assets/Character/Batu/Run/batu-lari-3.png<>uid://8fqniynonnd8::::res://game_assets/Character/Batu/Run/batu-lari-4.png<>uid://dsobo1rbpojbd::::res://game_assets/Character/Batu/Run/batu-lari-5.png<>uid://cvrfxf7sm0svv::::res://game_assets/Character/Batu/Run/batu-lari-6.png<>uid://desot5xc0tdif::::res://game_assets/Character/Batu/Run/batu-lari-7.png<>uid://dswg0d5homfw1::::res://game_assets/Character/Batu/Run/batu-lari-8.png<>uid://dg8076b7tm6l0::::res://game_assets/Character/Gunting/Run/gunting-lari-1.png<>uid://d0ml7g5c5e4s7::::res://game_assets/Character/Gunting/Run/gunting-lari-2.png<>uid://cu5a34cve71aa::::res://game_assets/Character/Gunting/Run/gunting-lari-3.png<>uid://c6lumdbt263u3::::res://game_assets/Character/Gunting/Run/gunting-lari-4.png<>uid://l4vb8cewv0aq::::res://game_assets/Character/Gunting/Run/gunting-lari-5.png<>uid://bcf0cym2rbaho::::res://game_assets/Character/Gunting/Run/gunting-lari-6.png<>uid://b3o3naq8rww4c::::res://game_assets/Character/Gunting/Run/gunting-lari-7.png<>uid://ct4cq10kyul3::::res://game_assets/Character/Gunting/Run/gunting-lari-8.png
+::res://game_assets/::1705563549
+::res://game_assets/Background/::1705564176
+Blue Ocean Sky.png::CompressedTexture2D::3861230310194831849::1704891362::1705564176::1::::<><>::
+::res://game_assets/Character/::1705490105
+::res://game_assets/Character/Batu/::1705488849
+::res://game_assets/Character/Batu/Idle/::1705564179
+batu-berdiri-1.png::CompressedTexture2D::514234567717689604::1705488706::1705564178::1::::<><>::
+batu-berdiri-2.png::CompressedTexture2D::818101539657182166::1705488706::1705564178::1::::<><>::
+batu-berdiri-3.png::CompressedTexture2D::4732193432556490310::1705488706::1705564179::1::::<><>::
+batu-berdiri-4.png::CompressedTexture2D::8709589033344622627::1705488706::1705564179::1::::<><>::
+::res://game_assets/Character/Batu/Run/::1705564181
+batu-lari-1.png::CompressedTexture2D::7071531336771217129::1705488706::1705564179::1::::<><>::
+batu-lari-2.png::CompressedTexture2D::843903327927756974::1705488706::1705564179::1::::<><>::
+batu-lari-3.png::CompressedTexture2D::7169409151324919643::1705488706::1705564179::1::::<><>::
+batu-lari-4.png::CompressedTexture2D::2327548873902397091::1705488706::1705564179::1::::<><>::
+batu-lari-5.png::CompressedTexture2D::8451649635162977929::1705488706::1705564180::1::::<><>::
+batu-lari-6.png::CompressedTexture2D::6282246476712913135::1705488706::1705564180::1::::<><>::
+batu-lari-7.png::CompressedTexture2D::7478061804543467849::1705488706::1705564181::1::::<><>::
+batu-lari-8.png::CompressedTexture2D::8468486698208840122::1705488706::1705564181::1::::<><>::
+::res://game_assets/Character/Gunting/::1705488864
+::res://game_assets/Character/Gunting/Idle/::1705564181
+gunting-berdiri-1.png::CompressedTexture2D::4208177170669913275::1705488706::1705564181::1::::<><>::
+gunting-berdiri-2.png::CompressedTexture2D::2551913630640051153::1705488706::1705564181::1::::<><>::
+gunting-berdiri-3.png::CompressedTexture2D::3765016180602576893::1705488706::1705564181::1::::<><>::
+gunting-berdiri-4.png::CompressedTexture2D::7260973255642789485::1705488706::1705564181::1::::<><>::
+::res://game_assets/Character/Gunting/Run/::1705564182
+gunting-lari-1.png::CompressedTexture2D::7650096280264079067::1705488707::1705564181::1::::<><>::
+gunting-lari-2.png::CompressedTexture2D::8939481069019603512::1705488707::1705564182::1::::<><>::
+gunting-lari-3.png::CompressedTexture2D::6238601102225520200::1705488706::1705564182::1::::<><>::
+gunting-lari-4.png::CompressedTexture2D::6972639604857512060::1705488706::1705564182::1::::<><>::
+gunting-lari-5.png::CompressedTexture2D::833222814100249340::1705488706::1705564182::1::::<><>::
+gunting-lari-6.png::CompressedTexture2D::2538643036494006260::1705488706::1705564182::1::::<><>::
+gunting-lari-7.png::CompressedTexture2D::4382332911472917780::1705488706::1705564175::1::::<><>::
+gunting-lari-8.png::CompressedTexture2D::181366110669970658::1705488706::1705564175::1::::<><>::
+::res://game_assets/Character/Kertas/::1705488831
+::res://game_assets/Character/Kertas/Idle/::1705564176
+kertas-berdiri-1.png::CompressedTexture2D::6933879115017663862::1705488706::1705564175::1::::<><>::
+kertas-berdiri-2.png::CompressedTexture2D::4753582737357045478::1705488706::1705564176::1::::<><>::
+kertas-berdiri-3.png::CompressedTexture2D::3512606527739621805::1705488706::1705564175::1::::<><>::
+kertas-berdiri-4.png::CompressedTexture2D::5373097970330532270::1705488706::1705564175::1::::<><>::
+::res://game_assets/Character/Kertas/Run/::1705564177
+kertas-lari-1.png::CompressedTexture2D::2074865600175944667::1705488707::1705564175::1::::<><>::
+kertas-lari-2.png::CompressedTexture2D::7451327648986903957::1705488707::1705564175::1::::<><>::
+kertas-lari-3.png::CompressedTexture2D::8940044734008462465::1705488706::1705564177::1::::<><>::
+kertas-lari-4.png::CompressedTexture2D::3469108772869408429::1705488706::1705564177::1::::<><>::
+kertas-lari-5.png::CompressedTexture2D::1432305726605319822::1705488707::1705564177::1::::<><>::
+kertas-lari-6.png::CompressedTexture2D::7553675490650675845::1705488706::1705564177::1::::<><>::
+kertas-lari-7.png::CompressedTexture2D::9164000323781313766::1705488707::1705564177::1::::<><>::
+kertas-lari-8.png::CompressedTexture2D::3717851477072967775::1705488707::1705564177::1::::<><>::
+::res://game_assets/Maps Texture/::1705564176
+TX Plant.png::CompressedTexture2D::4368266988175417056::1705442596::1705564176::1::::<><>::
+TX Props.png::CompressedTexture2D::3643641443375207633::1705442596::1705564176::1::::<><>::
+TX Shadow Plant.png::CompressedTexture2D::6906233249812673677::1705442596::1705564176::1::::<><>::
+TX Shadow.png::CompressedTexture2D::5019493246189377345::1705442596::1705564176::1::::<><>::
+TX Struct.png::CompressedTexture2D::3822944192878009150::1705442596::1705564176::1::::<><>::
+TX Tileset Grass.png::CompressedTexture2D::2837869869716480493::1705442596::1705564176::1::::<><>::
+TX Tileset Stone Ground.png::CompressedTexture2D::3223242750263460022::1705442596::1705564176::1::::<><>::
+TX Tileset Wall.png::CompressedTexture2D::2757714773138738065::1705442596::1705564176::1::::<><>::
+::res://globals/::1705564548
+entity_roles.gd::GDScript::-1::1705564501::0::1::::<>Node<>::
+::res://maps/::1705564173
+maps1.tscn::PackedScene::2809200824419311703::1705564173::0::1::::<><>::uid://bgoxkjjfs1w7f::::res://game_assets/Maps Texture/TX Tileset Grass.png<>uid://bfj4fojksqfob::::res://game_assets/Maps Texture/TX Tileset Wall.png<>uid://bl6mlp1llix1w::::res://game_assets/Maps Texture/TX Tileset Stone Ground.png
+::res://menus/::1705564555
+character_selection.gd::GDScript::-1::1705564501::0::1::::<>Node2D<>::
+character_selection.tscn::PackedScene::4677059849445431618::1705564555::0::1::::<><>::res://menus/character_selection.gd<>uid://bvan5tlj03jk8::::res://game_assets/Background/Blue Ocean Sky.png
+menu.gd::GDScript::-1::1705564479::0::1::::<>Control<>::
+menu.tscn::PackedScene::6371584878692898491::1705564555::0::1::::<><>::res://menus/menu.gd
+::res://scene/::1705564628
+world1.tscn::PackedScene::983956887546495253::1705564555::0::1::::<><>::uid://b8m5c7mw465d::::res://entities/player/player.tscn<>uid://dj57gyal30yvm::::res://entities/enemy/ai_scissor.tscn<>uid://c02fr6najblmh::::res://entities/enemy/ai_rock.tscn<>uid://bga2ek8psb1ix::::res://maps/maps1.tscn<>uid://gqm3iticl6v5::::res://entities/enemy/ai_paper.tscn

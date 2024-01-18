@@ -1,8 +1,8 @@
+CollisionShape2D
+CharacterBody2D
 TileMap
 Panel
-CollisionShape2D
 Area2D
-CharacterBody2D
 Label
 Button
 Node2D
@@ -12,5 +12,3 @@ CanvasLayer
 Node
 VBoxContainer
 ColorRect
-AnimatedSprite2D
-PointLight2D

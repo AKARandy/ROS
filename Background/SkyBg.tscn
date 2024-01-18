@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://6co8jb0e2w8y"]
 
-[ext_resource type="Texture2D" uid="uid://bvan5tlj03jk8" path="res://AssetsTemp/back.png" id="1_1e5b1"]
+[ext_resource type="Texture2D" uid="uid://bvan5tlj03jk8" path="res://game_assets/Background/Blue Ocean Sky.png" id="1_1e5b1"]
 [ext_resource type="Script" path="res://Background/SkyBg.gd" id="1_myyxl"]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]

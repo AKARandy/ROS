@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://oavvj4m4mlwn"]
+
+[ext_resource type="PackedScene" uid="uid://b8m5c7mw465d" path="res://player.tscn" id="1_eql8c"]
+[ext_resource type="PackedScene" uid="uid://dj57gyal30yvm" path="res://ai_scissor.tscn" id="4_mapgm"]
+[ext_resource type="PackedScene" uid="uid://c02fr6najblmh" path="res://ai_rock.tscn" id="5_06swb"]
+[ext_resource type="PackedScene" uid="uid://bga2ek8psb1ix" path="res://maps/maps1.tscn" id="5_p24wn"]
+[ext_resource type="PackedScene" uid="uid://gqm3iticl6v5" path="res://ai_paper.tscn" id="6_2ywfh"]
+
+[node name="World" type="Node2D"]
+
+[node name="Maps1" parent="." instance=ExtResource("5_p24wn")]
+
+[node name="player" parent="." instance=ExtResource("1_eql8c")]
+position = Vector2(672, 272)
+
+[node name="Mobs" type="Node2D" parent="."]
+
+[node name="ai_scissor" parent="Mobs" instance=ExtResource("4_mapgm")]
+position = Vector2(488, 376)
+
+[node name="ai_rock" parent="Mobs" instance=ExtResource("5_06swb")]
+position = Vector2(680, 384)
+
+[node name="ai_paper" parent="Mobs" instance=ExtResource("6_2ywfh")]
+position = Vector2(472, 272)

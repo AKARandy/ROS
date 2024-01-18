@@ -1,0 +1,210 @@
+[gd_scene load_steps=41 format=3 uid="uid://b8m5c7mw465d"]
+
+[ext_resource type="Script" path="res://entities/player/player.gd" id="1_8m1xs"]
+[ext_resource type="Texture2D" uid="uid://c5128ghuof43c" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-1.png" id="2_bi1pa"]
+[ext_resource type="Texture2D" uid="uid://b8yw2wbd5gga5" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-2.png" id="3_7ip80"]
+[ext_resource type="Texture2D" uid="uid://bqbsd7pudlju0" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-3.png" id="4_3tx2q"]
+[ext_resource type="Texture2D" uid="uid://cis1eyfv5ubva" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-4.png" id="5_bs2r4"]
+[ext_resource type="Texture2D" uid="uid://hldmrvyrqet5" path="res://game_assets/Character/Batu/Idle/batu-berdiri-1.png" id="6_kf04p"]
+[ext_resource type="Texture2D" uid="uid://lwkao3l5n03s" path="res://game_assets/Character/Batu/Idle/batu-berdiri-2.png" id="7_30tlb"]
+[ext_resource type="Texture2D" uid="uid://b8oksf3dtoimo" path="res://game_assets/Character/Batu/Idle/batu-berdiri-3.png" id="8_gemn1"]
+[ext_resource type="Texture2D" uid="uid://dwc8wnxdrfk2n" path="res://game_assets/Character/Batu/Idle/batu-berdiri-4.png" id="9_jnaj6"]
+[ext_resource type="Texture2D" uid="uid://b07qcfbf1ny08" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-1.png" id="10_kfw5q"]
+[ext_resource type="Texture2D" uid="uid://bcmfv6hu5bilt" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-2.png" id="11_o6op3"]
+[ext_resource type="Texture2D" uid="uid://btv2jb8laccf2" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-3.png" id="12_26wf1"]
+[ext_resource type="Texture2D" uid="uid://dbpjfy801oeg8" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-4.png" id="13_x7l3h"]
+[ext_resource type="Texture2D" uid="uid://4tcy6xmfjco6" path="res://game_assets/Character/Kertas/Run/kertas-lari-1.png" id="14_q1vrl"]
+[ext_resource type="Texture2D" uid="uid://defqjpb0sts6x" path="res://game_assets/Character/Kertas/Run/kertas-lari-2.png" id="15_3n32q"]
+[ext_resource type="Texture2D" uid="uid://d0mvh3t8o1m3j" path="res://game_assets/Character/Kertas/Run/kertas-lari-3.png" id="16_k6isn"]
+[ext_resource type="Texture2D" uid="uid://bpopykephehe0" path="res://game_assets/Character/Kertas/Run/kertas-lari-4.png" id="17_alpo6"]
+[ext_resource type="Texture2D" uid="uid://un24pfocxkeg" path="res://game_assets/Character/Kertas/Run/kertas-lari-5.png" id="18_j3jni"]
+[ext_resource type="Texture2D" uid="uid://dfvb6xcr7h5jd" path="res://game_assets/Character/Kertas/Run/kertas-lari-6.png" id="19_t7dg2"]
+[ext_resource type="Texture2D" uid="uid://d3td0m5xk868a" path="res://game_assets/Character/Kertas/Run/kertas-lari-7.png" id="20_1mr1f"]
+[ext_resource type="Texture2D" uid="uid://bs77qacerhtnr" path="res://game_assets/Character/Kertas/Run/kertas-lari-8.png" id="21_ppnnb"]
+[ext_resource type="Texture2D" uid="uid://c70rc8w5ygtfd" path="res://game_assets/Character/Batu/Run/batu-lari-1.png" id="22_aoyv1"]
+[ext_resource type="Texture2D" uid="uid://ma1718kk3n47" path="res://game_assets/Character/Batu/Run/batu-lari-2.png" id="23_ccm4o"]
+[ext_resource type="Texture2D" uid="uid://dae6eef7e7772" path="res://game_assets/Character/Batu/Run/batu-lari-3.png" id="24_dhldn"]
+[ext_resource type="Texture2D" uid="uid://8fqniynonnd8" path="res://game_assets/Character/Batu/Run/batu-lari-4.png" id="25_kbuxf"]
+[ext_resource type="Texture2D" uid="uid://dsobo1rbpojbd" path="res://game_assets/Character/Batu/Run/batu-lari-5.png" id="26_03q7e"]
+[ext_resource type="Texture2D" uid="uid://cvrfxf7sm0svv" path="res://game_assets/Character/Batu/Run/batu-lari-6.png" id="27_j24lj"]
+[ext_resource type="Texture2D" uid="uid://desot5xc0tdif" path="res://game_assets/Character/Batu/Run/batu-lari-7.png" id="28_0uga8"]
+[ext_resource type="Texture2D" uid="uid://dswg0d5homfw1" path="res://game_assets/Character/Batu/Run/batu-lari-8.png" id="29_db5so"]
+[ext_resource type="Texture2D" uid="uid://dg8076b7tm6l0" path="res://game_assets/Character/Gunting/Run/gunting-lari-1.png" id="30_071ix"]
+[ext_resource type="Texture2D" uid="uid://d0ml7g5c5e4s7" path="res://game_assets/Character/Gunting/Run/gunting-lari-2.png" id="31_edii5"]
+[ext_resource type="Texture2D" uid="uid://cu5a34cve71aa" path="res://game_assets/Character/Gunting/Run/gunting-lari-3.png" id="32_jlv30"]
+[ext_resource type="Texture2D" uid="uid://c6lumdbt263u3" path="res://game_assets/Character/Gunting/Run/gunting-lari-4.png" id="33_yviku"]
+[ext_resource type="Texture2D" uid="uid://l4vb8cewv0aq" path="res://game_assets/Character/Gunting/Run/gunting-lari-5.png" id="34_2wndb"]
+[ext_resource type="Texture2D" uid="uid://bcf0cym2rbaho" path="res://game_assets/Character/Gunting/Run/gunting-lari-6.png" id="35_bdd1e"]
+[ext_resource type="Texture2D" uid="uid://b3o3naq8rww4c" path="res://game_assets/Character/Gunting/Run/gunting-lari-7.png" id="36_vu14u"]
+[ext_resource type="Texture2D" uid="uid://ct4cq10kyul3" path="res://game_assets/Character/Gunting/Run/gunting-lari-8.png" id="37_hcbu1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sly2l"]
+size = Vector2(32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nid7a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_bi1pa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7ip80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3tx2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bs2r4")
+}],
+"loop": true,
+"name": &"idle_paper",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_kf04p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_30tlb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gemn1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jnaj6")
+}],
+"loop": true,
+"name": &"idle_rock",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_kfw5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_o6op3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_26wf1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_x7l3h")
+}],
+"loop": true,
+"name": &"idle_scissor",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_q1vrl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_3n32q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_k6isn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_alpo6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_j3jni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_t7dg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_1mr1f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ppnnb")
+}],
+"loop": true,
+"name": &"run_paper",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_aoyv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ccm4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_dhldn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_kbuxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_03q7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_j24lj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_0uga8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_db5so")
+}],
+"loop": true,
+"name": &"run_rock",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_071ix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_edii5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_jlv30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_yviku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_2wndb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_bdd1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_vu14u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_hcbu1")
+}],
+"loop": true,
+"name": &"run_scissor",
+"speed": 9.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2d5d8"]
+size = Vector2(34, 34)
+
+[node name="player" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_8m1xs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_sly2l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 9.53674e-07)
+scale = Vector2(0.035, 0.035)
+sprite_frames = SubResource("SpriteFrames_nid7a")
+animation = &"run_paper"
+frame_progress = 0.30983
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_2d5d8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
