@@ -32,3 +32,4 @@ res://globals/Global.gd
 res://menus/menu.gd
 res://entities/player/player.gd
 res://scene/world.tscn
+res://entities/enemy/ai_papper.gd
