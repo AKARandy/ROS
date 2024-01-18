@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var chase = false
 const speed = 150
-var the_chased
+var the_chased = null
 
 const CENTER = Vector2(450,300)
 enum {FLEEING, ROAMING}
@@ -35,6 +35,7 @@ func _on_player_detection_body_entered(body):
 			chase = true
 		if EntityRoles.role == EntityRoles.Roles.ROCK:
 			chase = false
+			the_chased = null
 			state = FLEEING
 			body_to_flee_from = body
 	if body.name == "ai_paper":
@@ -42,6 +43,7 @@ func _on_player_detection_body_entered(body):
 		chase = true
 	if body.name == "ai_rock":
 		chase = false
+		the_chased = null
 		state = FLEEING
 		body_to_flee_from = body
 
@@ -49,11 +51,13 @@ func _on_player_detection_body_exited(body):
 	if body.name == "player":
 		if EntityRoles.role == EntityRoles.Roles.PAPER:
 			chase = false
+			the_chased = null
 		if EntityRoles.role == EntityRoles.Roles.ROCK:
 			state = ROAMING
 			random_target_pos = position
 	if body.name == "ai_paper":
 		chase = false
+		the_chased = null
 	if body.name == "ai_rock":
 		state = ROAMING
 		random_target_pos = position
