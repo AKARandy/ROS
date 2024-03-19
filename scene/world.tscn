@@ -26,5 +26,3 @@ position = Vector2(668, 504)
 
 [node name="ai_paper" parent="Mobs" instance=ExtResource("5_wim0h")]
 position = Vector2(474, 360)
-
-[node name="Timer" type="Timer" parent="."]

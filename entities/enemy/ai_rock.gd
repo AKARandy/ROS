@@ -1,7 +1,9 @@
 extends CharacterBody2D
 
+const ENTITY_TYPE = EntityRoles.Roles.ROCK
+
 var chase = false
-const speed = 100
+const speed = 150
 var the_chased = null
 
 const CENTER = Vector2(450,300)
@@ -29,48 +31,56 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_player_detection_body_entered(body):
-	print(body)
-	if body.name == "player":
-		if EntityRoles.role == EntityRoles.Roles.SCISSOR:
+	if body.has_method("get_entity_type"):
+		var entity_type = body.get_entity_type()
+		if body.name == "player":
+			if EntityRoles.role == EntityRoles.Roles.SCISSOR:
+				the_chased = body.position
+				chase = true
+			if EntityRoles.role == EntityRoles.Roles.PAPER:
+				chase = false
+				the_chased = null
+				state = FLEEING
+				body_to_flee_from = body.position
+		if entity_type == EntityRoles.Roles.SCISSOR:
 			the_chased = body.position
 			chase = true
-		if EntityRoles.role == EntityRoles.Roles.PAPER:
+		if entity_type == EntityRoles.Roles.PAPER:
 			chase = false
 			the_chased = null
 			state = FLEEING
 			body_to_flee_from = body.position
-	if body.name == "ai_scissor":
-		the_chased = body.position
-		chase = true
-	if body.name == "ai_paper":
-		chase = false
-		the_chased = null
-		state = FLEEING
-		body_to_flee_from = body.position
 
 func _on_player_detection_body_exited(body):
-	if body.name == "player":
-		if EntityRoles.role == EntityRoles.Roles.SCISSOR:
+	if body.has_method("get_entity_type"):
+		var entity_type = body.get_entity_type()
+		if body.name == "player":
+			if EntityRoles.role == EntityRoles.Roles.SCISSOR:
+				chase = false
+				the_chased = null
+			if EntityRoles.role == EntityRoles.Roles.PAPER:
+				state = ROAMING
+				random_target_pos = position 
+		if entity_type == EntityRoles.Roles.PAPER:
 			chase = false
 			the_chased = null
-		if EntityRoles.role == EntityRoles.Roles.PAPER:
+		if entity_type == EntityRoles.Roles.ROCK:
 			state = ROAMING
-			random_target_pos = position 
-	if body.name == "ai_paper":
-		chase = false
-		the_chased = null
-	if body.name == "ai_rock":
-		state = ROAMING
-		random_target_pos = position
+			random_target_pos = position
 
 
 func _on_player_death_body_entered(body):
-	if body.name == "player":
-		if EntityRoles.role == EntityRoles.Roles.PAPER:
+	if body.has_method("get_entity_type"):
+		var entity_type = body.get_entity_type()
+		if body.name == "player":
+			if EntityRoles.role == EntityRoles.Roles.PAPER:
+				chase = false
+				the_chased = null
+				self.queue_free()
+		if entity_type == EntityRoles.Roles.PAPER:
 			chase = false
 			the_chased = null
 			self.queue_free()
-	if body.name == "ai_paper":
-		chase = false
-		the_chased = null
-		self.queue_free()
+
+func get_entity_type():
+	return ENTITY_TYPE

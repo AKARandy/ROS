@@ -69,3 +69,6 @@ func _on_area_2d_body_entered(body):
 	}
 	if EntityRoles.role in valid_combinations.keys() and body.name == valid_combinations[EntityRoles.role]:
 		increase_score()
+
+func get_entity_type():
+	return EntityRoles.role
