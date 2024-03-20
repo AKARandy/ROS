@@ -33,15 +33,6 @@ func _physics_process(delta):
 func _on_player_detection_body_entered(body):
 	if body.has_method("get_entity_type"):
 		var entity_type = body.get_entity_type()
-		if body.name == "player":
-			if EntityRoles.role == EntityRoles.Roles.PAPER:
-				the_chased = body.position
-				chase = true
-			if EntityRoles.role == EntityRoles.Roles.ROCK:
-				chase = false
-				the_chased = null
-				state = FLEEING
-				body_to_flee_from = body.position
 		if entity_type == EntityRoles.Roles.PAPER:
 			the_chased = body.position
 			chase = true
@@ -54,13 +45,6 @@ func _on_player_detection_body_entered(body):
 func _on_player_detection_body_exited(body):
 	if body.has_method("get_entity_type"):
 		var entity_type = body.get_entity_type()
-		if body.name == "player":
-			if EntityRoles.role == EntityRoles.Roles.PAPER:
-				chase = false
-				the_chased = null
-			if EntityRoles.role == EntityRoles.Roles.ROCK:
-				state = ROAMING
-				random_target_pos = position
 		if entity_type == EntityRoles.Roles.PAPER:
 			chase = false
 			the_chased = null
@@ -69,19 +53,17 @@ func _on_player_detection_body_exited(body):
 			random_target_pos = position
 
 
-
 func _on_player_death_body_entered(body):
 	if body.has_method("get_entity_type"):
 		var entity_type = body.get_entity_type()
-		if body.name == "player":
-			if EntityRoles.role == EntityRoles.Roles.ROCK:
-				chase = false
-				the_chased = null
-				self.queue_free()
 		if entity_type == EntityRoles.Roles.ROCK:
 			chase = false
 			the_chased = null
 			self.queue_free()
-
+			Tracker.scissorNum -= 1
+			print("Paper: ", Tracker.paperNum)
+			print("Rock: ", Tracker.rockNum)
+			print("Scissor: ", Tracker.scissorNum)
+			print("\n")
 func get_entity_type():
 	return ENTITY_TYPE
