@@ -12,23 +12,52 @@ var state = ROAMING
 var body_to_flee_from : Vector2
 var random_target_pos : Vector2 = Vector2(450,300)
 
+var stuck_timer: float = 0.0
+
 func _physics_process(delta):
-	if chase == true:
-		var direction = (the_chased - self.position).normalized()
-		velocity.x = direction.x * speed
-		velocity.y = direction.y * speed
-		
-	if chase == false:
+	var target_velocity = Vector2.ZERO
+
+	if chase:
+		target_velocity = (the_chased - self.position).normalized() * speed
+	else:
 		match state:
 			FLEEING:
-				position -= position.direction_to(body_to_flee_from) * speed * delta
+				target_velocity = -position.direction_to(body_to_flee_from) * speed
+				if is_stuck(target_velocity, delta):
+					state = ROAMING
+					random_target_pos = Vector2(
+						randf_range(0.0, get_viewport_rect().size.x),
+						randf_range(0.0, get_viewport_rect().size.y)
+					)
 			ROAMING:
+				stuck_timer += delta
 				if position.distance_to(random_target_pos) <= speed * delta:
-					random_target_pos = CENTER + Vector2(0,300).rotated(randf() * 2 * PI)
+					random_target_pos = Vector2(
+						randf_range(0.0, get_viewport_rect().size.x),
+						randf_range(0.0, get_viewport_rect().size.y)
+					)
+					stuck_timer = 0.0  # Reset the stuck timer
+				elif is_stuck(target_velocity, delta):
+					random_target_pos = Vector2(
+						randf_range(0.0, get_viewport_rect().size.x),
+						randf_range(0.0, get_viewport_rect().size.y)
+					)
+					stuck_timer = 0.0
 				else:
-					position += position.direction_to(random_target_pos) * speed * delta
-	
+					target_velocity = position.direction_to(random_target_pos) * speed
+
+	velocity = lerp(velocity, target_velocity, delta * 10.0)
 	move_and_slide()
+
+	# Clamp the mob's position within the game area
+	position.x = clamp(position.x, 0.0, get_viewport_rect().size.x)
+	position.y = clamp(position.y, 0.0, get_viewport_rect().size.y)
+
+func is_stuck(target_velocity: Vector2, delta: float) -> bool:
+	stuck_timer += delta
+	if stuck_timer > 1.0 and target_velocity.length() < 1.0:
+		return true
+	return false
 
 func _on_player_detection_body_entered(body):
 	if body.has_method("get_entity_type"):
