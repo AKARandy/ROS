@@ -14,24 +14,24 @@ metadata/_edit_lock_ = true
 
 [node name="rock_select" type="Button" parent="."]
 offset_left = 64.0
-offset_top = 448.0
+offset_top = 312.0
 offset_right = 320.0
-offset_bottom = 576.0
-text = "Rock"
+offset_bottom = 440.0
+text = "Blue Rock"
 
 [node name="paper_select" type="Button" parent="."]
 offset_left = 448.0
-offset_top = 448.0
+offset_top = 304.0
 offset_right = 704.0
-offset_bottom = 576.0
-text = "Paper"
+offset_bottom = 432.0
+text = "Blue Paper"
 
 [node name="scissor_select" type="Button" parent="."]
 offset_left = 832.0
-offset_top = 448.0
+offset_top = 304.0
 offset_right = 1088.0
-offset_bottom = 576.0
-text = "Scissor"
+offset_bottom = 432.0
+text = "Blue Scissor"
 
 [node name="Label" type="Label" parent="."]
 offset_top = 104.0
@@ -44,6 +44,30 @@ text = "Character Selection"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="rock_select2" type="Button" parent="."]
+offset_left = 64.0
+offset_top = 480.0
+offset_right = 320.0
+offset_bottom = 608.0
+text = "Red Rock"
+
+[node name="paper_select2" type="Button" parent="."]
+offset_left = 448.0
+offset_top = 472.0
+offset_right = 704.0
+offset_bottom = 600.0
+text = "Red Paper"
+
+[node name="scissor_select2" type="Button" parent="."]
+offset_left = 832.0
+offset_top = 472.0
+offset_right = 1088.0
+offset_bottom = 600.0
+text = "Red Scissor"
+
 [connection signal="pressed" from="rock_select" to="." method="_on_rock_select_pressed"]
 [connection signal="pressed" from="paper_select" to="." method="_on_paper_select_pressed"]
 [connection signal="pressed" from="scissor_select" to="." method="_on_scissor_select_pressed"]
+[connection signal="pressed" from="rock_select2" to="." method="_on_rock_select_pressed"]
+[connection signal="pressed" from="paper_select2" to="." method="_on_paper_select_pressed"]
+[connection signal="pressed" from="scissor_select2" to="." method="_on_scissor_select_pressed"]

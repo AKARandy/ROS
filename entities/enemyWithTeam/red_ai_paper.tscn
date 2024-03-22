@@ -1,0 +1,101 @@
+[gd_scene load_steps=18 format=3 uid="uid://d0u7n50ndiefp"]
+
+[ext_resource type="Script" path="res://entities/enemy/ai_papper.gd" id="1_7rl6w"]
+[ext_resource type="Texture2D" uid="uid://c5128ghuof43c" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-1.png" id="2_64pwt"]
+[ext_resource type="Texture2D" uid="uid://b8yw2wbd5gga5" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-2.png" id="3_pfs6l"]
+[ext_resource type="Texture2D" uid="uid://bqbsd7pudlju0" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-3.png" id="4_3sj2h"]
+[ext_resource type="Texture2D" uid="uid://cis1eyfv5ubva" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-4.png" id="5_en33h"]
+[ext_resource type="Texture2D" uid="uid://4tcy6xmfjco6" path="res://game_assets/Character/Kertas/Run/kertas-lari-1.png" id="6_rb7x7"]
+[ext_resource type="Texture2D" uid="uid://defqjpb0sts6x" path="res://game_assets/Character/Kertas/Run/kertas-lari-2.png" id="7_fnngt"]
+[ext_resource type="Texture2D" uid="uid://d0mvh3t8o1m3j" path="res://game_assets/Character/Kertas/Run/kertas-lari-3.png" id="8_7rncf"]
+[ext_resource type="Texture2D" uid="uid://bpopykephehe0" path="res://game_assets/Character/Kertas/Run/kertas-lari-4.png" id="9_gput2"]
+[ext_resource type="Texture2D" uid="uid://un24pfocxkeg" path="res://game_assets/Character/Kertas/Run/kertas-lari-5.png" id="10_13w2u"]
+[ext_resource type="Texture2D" uid="uid://dfvb6xcr7h5jd" path="res://game_assets/Character/Kertas/Run/kertas-lari-6.png" id="11_xmeah"]
+[ext_resource type="Texture2D" uid="uid://d3td0m5xk868a" path="res://game_assets/Character/Kertas/Run/kertas-lari-7.png" id="12_ifeyv"]
+[ext_resource type="Texture2D" uid="uid://bs77qacerhtnr" path="res://game_assets/Character/Kertas/Run/kertas-lari-8.png" id="13_lq3jt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f0byj"]
+size = Vector2(32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w83ex"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_64pwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_pfs6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3sj2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_en33h")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_rb7x7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fnngt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7rncf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_gput2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_13w2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xmeah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ifeyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_lq3jt")
+}],
+"loop": true,
+"name": &"run",
+"speed": 9.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_imux2"]
+radius = 92.1954
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sx3sr"]
+size = Vector2(34, 34)
+
+[node name="ai_paper" type="CharacterBody2D"]
+script = ExtResource("1_7rl6w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_f0byj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(3, 0)
+scale = Vector2(0.035, 0.035)
+sprite_frames = SubResource("SpriteFrames_w83ex")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="PlayerDetection" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
+shape = SubResource("CircleShape2D_imux2")
+
+[node name="PlayerDeath" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDeath"]
+shape = SubResource("RectangleShape2D_sx3sr")
+
+[connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]
+[connection signal="body_entered" from="PlayerDeath" to="." method="_on_player_death_body_entered"]

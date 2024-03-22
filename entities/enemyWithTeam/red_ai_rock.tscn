@@ -1,0 +1,104 @@
+[gd_scene load_steps=18 format=3 uid="uid://c3gr16q08da75"]
+
+[ext_resource type="Script" path="res://entities/enemy/ai_rock.gd" id="1_5wtm0"]
+[ext_resource type="Texture2D" uid="uid://hldmrvyrqet5" path="res://game_assets/Character/Batu/Idle/batu-berdiri-1.png" id="2_ywmir"]
+[ext_resource type="Texture2D" uid="uid://lwkao3l5n03s" path="res://game_assets/Character/Batu/Idle/batu-berdiri-2.png" id="3_turm8"]
+[ext_resource type="Texture2D" uid="uid://b8oksf3dtoimo" path="res://game_assets/Character/Batu/Idle/batu-berdiri-3.png" id="4_a1lif"]
+[ext_resource type="Texture2D" uid="uid://dwc8wnxdrfk2n" path="res://game_assets/Character/Batu/Idle/batu-berdiri-4.png" id="5_xv0rv"]
+[ext_resource type="Texture2D" uid="uid://c70rc8w5ygtfd" path="res://game_assets/Character/Batu/Run/batu-lari-1.png" id="6_5t4bf"]
+[ext_resource type="Texture2D" uid="uid://ma1718kk3n47" path="res://game_assets/Character/Batu/Run/batu-lari-2.png" id="7_xppsl"]
+[ext_resource type="Texture2D" uid="uid://dae6eef7e7772" path="res://game_assets/Character/Batu/Run/batu-lari-3.png" id="8_8o4cb"]
+[ext_resource type="Texture2D" uid="uid://8fqniynonnd8" path="res://game_assets/Character/Batu/Run/batu-lari-4.png" id="9_tqcf7"]
+[ext_resource type="Texture2D" uid="uid://dsobo1rbpojbd" path="res://game_assets/Character/Batu/Run/batu-lari-5.png" id="10_ipamu"]
+[ext_resource type="Texture2D" uid="uid://cvrfxf7sm0svv" path="res://game_assets/Character/Batu/Run/batu-lari-6.png" id="11_b1nym"]
+[ext_resource type="Texture2D" uid="uid://desot5xc0tdif" path="res://game_assets/Character/Batu/Run/batu-lari-7.png" id="12_8oj35"]
+[ext_resource type="Texture2D" uid="uid://dswg0d5homfw1" path="res://game_assets/Character/Batu/Run/batu-lari-8.png" id="13_ija3g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1uj1o"]
+size = Vector2(32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_trdin"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ywmir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_turm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_a1lif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_xv0rv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ywmir")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_5t4bf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xppsl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8o4cb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_tqcf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ipamu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_b1nym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_8oj35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ija3g")
+}],
+"loop": true,
+"name": &"run",
+"speed": 9.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r5x3p"]
+radius = 92.1954
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8kxel"]
+size = Vector2(34, 34)
+
+[node name="ai_rock" type="CharacterBody2D"]
+script = ExtResource("1_5wtm0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_1uj1o")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(0.035, 0.035)
+sprite_frames = SubResource("SpriteFrames_trdin")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="PlayerDetection" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
+shape = SubResource("CircleShape2D_r5x3p")
+
+[node name="PlayerDeath" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDeath"]
+shape = SubResource("RectangleShape2D_8kxel")
+
+[connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]
+[connection signal="body_entered" from="PlayerDeath" to="." method="_on_player_death_body_entered"]

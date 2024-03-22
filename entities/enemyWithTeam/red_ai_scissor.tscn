@@ -1,0 +1,102 @@
+[gd_scene load_steps=18 format=3 uid="uid://c7its6gekeuh1"]
+
+[ext_resource type="Script" path="res://entities/enemy/ai_scissor.gd" id="1_r4tqe"]
+[ext_resource type="Texture2D" uid="uid://b07qcfbf1ny08" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-1.png" id="2_uxw50"]
+[ext_resource type="Texture2D" uid="uid://bcmfv6hu5bilt" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-2.png" id="3_u6ka2"]
+[ext_resource type="Texture2D" uid="uid://btv2jb8laccf2" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-3.png" id="4_nfj0y"]
+[ext_resource type="Texture2D" uid="uid://dbpjfy801oeg8" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-4.png" id="5_vypft"]
+[ext_resource type="Texture2D" uid="uid://dg8076b7tm6l0" path="res://game_assets/Character/Gunting/Run/gunting-lari-1.png" id="6_kge8v"]
+[ext_resource type="Texture2D" uid="uid://d0ml7g5c5e4s7" path="res://game_assets/Character/Gunting/Run/gunting-lari-2.png" id="7_ybob4"]
+[ext_resource type="Texture2D" uid="uid://cu5a34cve71aa" path="res://game_assets/Character/Gunting/Run/gunting-lari-3.png" id="8_8bnls"]
+[ext_resource type="Texture2D" uid="uid://c6lumdbt263u3" path="res://game_assets/Character/Gunting/Run/gunting-lari-4.png" id="9_e06bq"]
+[ext_resource type="Texture2D" uid="uid://l4vb8cewv0aq" path="res://game_assets/Character/Gunting/Run/gunting-lari-5.png" id="10_kb1c2"]
+[ext_resource type="Texture2D" uid="uid://bcf0cym2rbaho" path="res://game_assets/Character/Gunting/Run/gunting-lari-6.png" id="11_jkpjy"]
+[ext_resource type="Texture2D" uid="uid://b3o3naq8rww4c" path="res://game_assets/Character/Gunting/Run/gunting-lari-7.png" id="12_ysj52"]
+[ext_resource type="Texture2D" uid="uid://ct4cq10kyul3" path="res://game_assets/Character/Gunting/Run/gunting-lari-8.png" id="13_2jqj3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bawak"]
+size = Vector2(32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v30ex"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_uxw50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_u6ka2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nfj0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vypft")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_kge8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ybob4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8bnls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_e06bq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_kb1c2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jkpjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ysj52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2jqj3")
+}],
+"loop": true,
+"name": &"run",
+"speed": 9.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_seej2"]
+radius = 92.1954
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_50lpd"]
+size = Vector2(34, 34)
+
+[node name="ai_scissor" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_r4tqe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bawak")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.19209e-07, -1)
+scale = Vector2(0.035, 0.035)
+sprite_frames = SubResource("SpriteFrames_v30ex")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="PlayerDetection" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
+shape = SubResource("CircleShape2D_seej2")
+
+[node name="PlayerDeath" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDeath"]
+shape = SubResource("RectangleShape2D_50lpd")
+
+[connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="PlayerDetection" to="." method="_on_player_detection_body_exited"]
+[connection signal="body_entered" from="PlayerDeath" to="." method="_on_player_death_body_entered"]
