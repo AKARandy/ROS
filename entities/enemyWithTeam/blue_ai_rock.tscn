@@ -85,7 +85,7 @@ shape = SubResource("RectangleShape2D_1uj1o")
 position = Vector2(0, -1)
 scale = Vector2(0.035, 0.035)
 sprite_frames = SubResource("SpriteFrames_trdin")
-animation = &"idle"
+animation = &"run"
 autoplay = "idle"
 
 [node name="PlayerDetection" type="Area2D" parent="."]

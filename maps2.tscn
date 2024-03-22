@@ -1,10 +1,91 @@
-[gd_scene load_steps=2 format=3 uid="uid://bh8tnw6jjdp2d"]
+[gd_scene load_steps=10 format=3 uid="uid://bh8tnw6jjdp2d"]
 
 [ext_resource type="Texture2D" uid="uid://bxqut1c00d5x7" path="res://RPS_T_Asset/Karya_Seni_Tanpa_Judul-37.png" id="1_e2mis"]
+[ext_resource type="Texture2D" uid="uid://bb7g0qosuqeg4" path="res://RPS_T_Asset/full 2-3 healthbar.png" id="2_2fmgk"]
+[ext_resource type="Script" path="res://RedTower.gd" id="2_b2e3p"]
+[ext_resource type="Texture2D" uid="uid://bjhhvdf1d6pw8" path="res://RPS_T_Asset/full 1-3 healthbar.png" id="3_nof1i"]
+[ext_resource type="Texture2D" uid="uid://qyjs3un5mftf" path="res://RPS_T_Asset/full healthbar.png" id="4_mm2nw"]
+[ext_resource type="Script" path="res://BlueTower.gd" id="6_yrsn3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x21nd"]
+size = Vector2(90, 75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0rwg5"]
+size = Vector2(110, 92)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x10pp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2fmgk")
+}],
+"loop": true,
+"name": &"damaged",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_nof1i")
+}],
+"loop": true,
+"name": &"dying",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_mm2nw")
+}],
+"loop": true,
+"name": &"full",
+"speed": 5.0
+}]
 
 [node name="Maps2" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
+offset_top = 57.0
 offset_right = 1920.0
-offset_bottom = 1080.0
+offset_bottom = 1137.0
 texture = ExtResource("1_e2mis")
+
+[node name="RedTower" type="StaticBody2D" parent="."]
+script = ExtResource("2_b2e3p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RedTower"]
+position = Vector2(347, 844)
+shape = SubResource("RectangleShape2D_x21nd")
+
+[node name="PlayerTouched" type="Area2D" parent="RedTower"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RedTower/PlayerTouched"]
+position = Vector2(345, 844)
+shape = SubResource("RectangleShape2D_0rwg5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="RedTower"]
+position = Vector2(345, 760)
+scale = Vector2(0.782609, 1)
+sprite_frames = SubResource("SpriteFrames_x10pp")
+animation = &"dying"
+
+[node name="BlueTower" type="StaticBody2D" parent="."]
+position = Vector2(1285, -299)
+script = ExtResource("6_yrsn3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlueTower"]
+position = Vector2(347, 844)
+shape = SubResource("RectangleShape2D_x21nd")
+
+[node name="PlayerTouched" type="Area2D" parent="BlueTower"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BlueTower/PlayerTouched"]
+position = Vector2(345, 844)
+shape = SubResource("RectangleShape2D_0rwg5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BlueTower"]
+position = Vector2(345, 755)
+scale = Vector2(0.833333, 1)
+sprite_frames = SubResource("SpriteFrames_x10pp")
+animation = &"dying"
+
+[connection signal="body_entered" from="RedTower/PlayerTouched" to="RedTower" method="_on_player_touched_body_entered"]
+[connection signal="body_entered" from="BlueTower/PlayerTouched" to="BlueTower" method="_on_player_touched_body_entered"]

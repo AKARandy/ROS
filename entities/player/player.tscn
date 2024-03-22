@@ -206,5 +206,6 @@ shape = SubResource("RectangleShape2D_2d5d8")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
+limit_smoothed = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
