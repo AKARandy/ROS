@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://cxegf65sobac4"]
 
-[ext_resource type="Script" path="res://entities/enemy/ai_rock.gd" id="1_t3tio"]
+[ext_resource type="Script" path="res://entities/enemyWithTeam/blue_ai_rock.gd" id="1_3a83n"]
 [ext_resource type="Texture2D" uid="uid://hldmrvyrqet5" path="res://game_assets/Character/Batu/Idle/batu-berdiri-1.png" id="2_pgu5l"]
 [ext_resource type="Texture2D" uid="uid://lwkao3l5n03s" path="res://game_assets/Character/Batu/Idle/batu-berdiri-2.png" id="3_2ifma"]
 [ext_resource type="Texture2D" uid="uid://b8oksf3dtoimo" path="res://game_assets/Character/Batu/Idle/batu-berdiri-3.png" id="4_wc7o8"]
@@ -76,7 +76,7 @@ radius = 92.1954
 size = Vector2(34, 34)
 
 [node name="ai_rock" type="CharacterBody2D"]
-script = ExtResource("1_t3tio")
+script = ExtResource("1_3a83n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_1uj1o")

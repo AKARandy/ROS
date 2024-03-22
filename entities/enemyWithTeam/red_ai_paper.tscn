@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://d0u7n50ndiefp"]
 
-[ext_resource type="Script" path="res://entities/enemy/ai_papper.gd" id="1_7rl6w"]
+[ext_resource type="Script" path="res://entities/enemyWithTeam/red_ai_paper.gd" id="1_5w43l"]
 [ext_resource type="Texture2D" uid="uid://c5128ghuof43c" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-1.png" id="2_64pwt"]
 [ext_resource type="Texture2D" uid="uid://b8yw2wbd5gga5" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-2.png" id="3_pfs6l"]
 [ext_resource type="Texture2D" uid="uid://bqbsd7pudlju0" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-3.png" id="4_3sj2h"]
@@ -73,7 +73,7 @@ radius = 92.1954
 size = Vector2(34, 34)
 
 [node name="ai_paper" type="CharacterBody2D"]
-script = ExtResource("1_7rl6w")
+script = ExtResource("1_5w43l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_f0byj")

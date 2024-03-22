@@ -1,6 +1,6 @@
 [gd_scene load_steps=18 format=3 uid="uid://cggucrfb4p7dc"]
 
-[ext_resource type="Script" path="res://entities/enemy/ai_scissor.gd" id="1_pesdb"]
+[ext_resource type="Script" path="res://entities/enemyWithTeam/blue_ai_scissor.gd" id="1_xsul6"]
 [ext_resource type="Texture2D" uid="uid://b07qcfbf1ny08" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-1.png" id="2_l3cvv"]
 [ext_resource type="Texture2D" uid="uid://bcmfv6hu5bilt" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-2.png" id="3_ibufk"]
 [ext_resource type="Texture2D" uid="uid://btv2jb8laccf2" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-3.png" id="4_gb3su"]
@@ -74,7 +74,7 @@ size = Vector2(34, 34)
 
 [node name="ai_scissor" type="CharacterBody2D"]
 motion_mode = 1
-script = ExtResource("1_pesdb")
+script = ExtResource("1_xsul6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_bawak")

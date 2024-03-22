@@ -1,31 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://oavvj4m4mlwn"]
+[gd_scene load_steps=4 format=3 uid="uid://oavvj4m4mlwn"]
 
 [ext_resource type="Script" path="res://scene/world.gd" id="1_3xabq"]
 [ext_resource type="PackedScene" uid="uid://b8m5c7mw465d" path="res://entities/player/player.tscn" id="2_01da0"]
 [ext_resource type="PackedScene" uid="uid://bh8tnw6jjdp2d" path="res://maps2.tscn" id="2_7j3aa"]
-[ext_resource type="PackedScene" uid="uid://dj57gyal30yvm" path="res://entities/enemy/ai_scissor.tscn" id="3_ug80q"]
-[ext_resource type="PackedScene" uid="uid://c02fr6najblmh" path="res://entities/enemy/ai_rock.tscn" id="4_3sme4"]
-[ext_resource type="PackedScene" uid="uid://gqm3iticl6v5" path="res://entities/enemy/ai_paper.tscn" id="5_wim0h"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_3xabq")
 
 [node name="Maps2" parent="." instance=ExtResource("2_7j3aa")]
-position = Vector2(0, 17)
+position = Vector2(-4, 1)
 
 [node name="player" parent="." instance=ExtResource("2_01da0")]
-position = Vector2(694, 363)
+position = Vector2(434, 930)
 
 [node name="Mobs" type="Node2D" parent="."]
-
-[node name="ai_scissor" parent="Mobs" instance=ExtResource("3_ug80q")]
-position = Vector2(475, 492)
-
-[node name="ai_rock" parent="Mobs" instance=ExtResource("4_3sme4")]
-position = Vector2(668, 504)
-
-[node name="ai_paper" parent="Mobs" instance=ExtResource("5_wim0h")]
-position = Vector2(474, 360)
 
 [node name="SpawnTimer" type="Timer" parent="."]
 

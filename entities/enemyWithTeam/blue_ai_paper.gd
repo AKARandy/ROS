@@ -61,39 +61,44 @@ func is_stuck(target_velocity: Vector2, delta: float) -> bool:
 	return false
 
 func _on_player_detection_body_entered(body):
-	if body.has_method("get_entity_type"):
+	if body.has_method("get_entity_type") && body.has_method("get_entity_team"):
 		var entity_type = body.get_entity_type()
-		if entity_type == EntityRoles.Roles.ROCK:
-			the_chased = body.position
-			chase = true
-		if entity_type == EntityRoles.Roles.SCISSOR:
-			chase = false
-			the_chased = null
-			state = FLEEING
-			body_to_flee_from = body.position
+		var entity_team = body.get_entity_team()
+		if entity_team == EntityRoles.Team.Red: 
+			if entity_type == EntityRoles.Roles.ROCK:
+				the_chased = body.position
+				chase = true
+			if entity_type == EntityRoles.Roles.SCISSOR:
+				chase = false
+				the_chased = null
+				state = FLEEING
+				body_to_flee_from = body.position
 
 func _on_player_detection_body_exited(body):
-	if body.has_method("get_entity_type"):
+	if body.has_method("get_entity_type") && body.has_method("get_entity_team"):
 		var entity_type = body.get_entity_type()
-		if entity_type == EntityRoles.Roles.ROCK:
-			chase = false
-			the_chased = null
-		if entity_type == EntityRoles.Roles.SCISSOR:
-			state = ROAMING
-			random_target_pos = position
+		var entity_team = body.get_entity_team()
+		if entity_team == EntityRoles.Team.Red: 
+			if entity_type == EntityRoles.Roles.ROCK:
+				chase = false
+				the_chased = null
+			if entity_type == EntityRoles.Roles.SCISSOR:
+				state = ROAMING
+				random_target_pos = position
 
 
 func _on_player_death_body_entered(body):
-	if body.has_method("get_entity_type"):
+	if body.has_method("get_entity_type") && body.has_method("get_entity_team"):
 		var entity_type = body.get_entity_type()
-		if entity_type == EntityRoles.Roles.SCISSOR:
-			chase = false
-			the_chased = null
-			self.queue_free()
-			Tracker.paperNum -= 1
-			print("Paper: ", Tracker.paperNum)
-			print("Rock: ", Tracker.rockNum)
-			print("Scissor: ", Tracker.scissorNum)
-			print("\n")
+		var entity_team = body.get_entity_team()
+		if entity_team == EntityRoles.Team.Red: 
+			if entity_type == EntityRoles.Roles.SCISSOR:
+				chase = false
+				the_chased = null
+				self.queue_free()
+				Tracker.bluePaper -= 1
 func get_entity_type():
 	return ENTITY_TYPE
+
+func get_entity_team():
+	return ENTITY_TEAM

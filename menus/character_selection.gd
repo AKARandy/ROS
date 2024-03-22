@@ -15,14 +15,36 @@ func _process(delta):
 func _on_rock_select_pressed():
 	get_tree().change_scene_to_file("res://scene/world.tscn")
 	EntityRoles.role = EntityRoles.Roles.ROCK
-	Tracker.rockNum += 1
+	Tracker.blueRock += 1
+	EntityRoles.team = EntityRoles.Team.Blue
 
 func _on_paper_select_pressed():
 	get_tree().change_scene_to_file("res://scene/world.tscn")
 	EntityRoles.role = EntityRoles.Roles.PAPER
-	Tracker.paperNum += 1
+	Tracker.bluePaper += 1
+	EntityRoles.team = EntityRoles.Team.Blue
 	
 func _on_scissor_select_pressed():
 	get_tree().change_scene_to_file("res://scene/world.tscn")
 	EntityRoles.role = EntityRoles.Roles.SCISSOR
-	Tracker.scissorNum += 1
+	Tracker.blueScissor += 1
+	EntityRoles.team = EntityRoles.Team.Blue
+
+
+func _on_rock_select_2_pressed():
+	get_tree().change_scene_to_file("res://scene/world.tscn")
+	EntityRoles.role = EntityRoles.Roles.ROCK
+	Tracker.redRock += 1
+	EntityRoles.team = EntityRoles.Team.Red
+
+func _on_paper_select_2_pressed():
+	get_tree().change_scene_to_file("res://scene/world.tscn")
+	EntityRoles.role = EntityRoles.Roles.PAPER
+	Tracker.redPaper+= 1
+	EntityRoles.team = EntityRoles.Team.Red
+
+func _on_scissor_select_2_pressed():
+	get_tree().change_scene_to_file("res://scene/world.tscn")
+	EntityRoles.role = EntityRoles.Roles.SCISSOR
+	Tracker.redScissor += 1
+	EntityRoles.team = EntityRoles.Team.Red

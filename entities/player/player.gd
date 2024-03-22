@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 125
+const SPEED = 500
 const ACCELERATION = 950
 const FRICTION = 625
 
@@ -72,3 +72,6 @@ func _on_area_2d_body_entered(body):
 
 func get_entity_type():
 	return EntityRoles.role
+
+func get_entity_team():
+	return EntityRoles.team
