@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 EntityRoles="*res://globals/entity_roles.gd"
 Tracker="*res://globals/tracker.gd"
+EntityBase="*res://globals/entity_base.gd"
 
 [display]
 

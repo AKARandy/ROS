@@ -2,13 +2,26 @@
 
 extends Node
 
-enum Roles { ROCK, PAPER, SCISSOR }
-enum Team {Blue, Red}
 
-const ROCK = 1
-const PAPER = 2
-const SCISSOR = 3
+# Roles Enum
+enum Roles {
+	UNKNOWN,
+	ROCK,
+	PAPER,
+	SCISSOR
+}
 
-var role : Roles = Roles.PAPER
+# Team Enum
+enum Team {
+	UNKNOWN,
+	Blue,
+	Red
+}
 
-var team : Team = Team.Blue
+# Constants
+const ROCK: int = Roles.ROCK
+const PAPER: int = Roles.PAPER
+const SCISSOR: int = Roles.SCISSOR
+
+var role = EntityRoles.Roles.UNKNOWN
+var team = EntityRoles.Team.UNKNOWN
