@@ -4,6 +4,7 @@ extends Node2D
 #var rock = preload("res://entities/enemy/ai_rock.tscn")
 #var scissor = preload("res://entities/enemy/ai_scissor.tscn")
 
+var player = preload("res://entities/player/player.tscn")
 var red_paper = preload("res://entities/enemyWithTeam/red_ai_paper.tscn")
 var red_rock = preload("res://entities/enemyWithTeam/red_ai_rock.tscn")
 var red_scissor = preload("res://entities/enemyWithTeam/red_ai_scissor.tscn")
@@ -31,6 +32,12 @@ func _on_spawn_timer_timeout():
 	#print("\n")
 
 func spawn_enemies():
+	if Tracker.playerDead == true:
+		var mob = player.instantiate()
+		mob.position = Vector2(250, 950)
+		add_child(mob)
+		Tracker.playerDead = false
+	
 	if Tracker.redPaper < 2:
 		var mob = red_paper.instantiate()
 		mob.position = Vector2(250, 950)

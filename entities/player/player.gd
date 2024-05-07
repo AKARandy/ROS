@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 500
+const SPEED = 150
 const ACCELERATION = 950
 const FRICTION = 625
 
@@ -62,13 +62,20 @@ func direction_animated_sprite(direction):
 		_animated_sprite.flip_h = true
 
 func _on_area_2d_body_entered(body):
-	var valid_combinations = {
-		EntityRoles.Roles.PAPER: "ai_rock",
-		EntityRoles.Roles.ROCK: "ai_scissor",
-		EntityRoles.Roles.SCISSOR: "ai_paper"
+	var myRole_wdt = { #This is my role, i will die to...
+		EntityRoles.Roles.PAPER: EntityRoles.Roles.SCISSOR,
+		EntityRoles.Roles.ROCK: EntityRoles.Roles.PAPER,
+		EntityRoles.Roles.SCISSOR: EntityRoles.Roles.ROCK
 	}
-	if EntityRoles.role in valid_combinations.keys() and body.name == valid_combinations[EntityRoles.role]:
-		increase_score()
+	if body.has_method("get_entity_type") && body.has_method("get_entity_team"):
+		var entity_type = body.get_entity_type()
+		var entity_team = body.get_entity_team()
+		if entity_team != EntityRoles.team: 
+			if entity_type == myRole_wdt[EntityRoles.role]:
+				self.queue_free()
+				Tracker.playerDead = true
+			elif entity_type != myRole_wdt[EntityRoles.role] and entity_type == EntityRoles.role:
+				increase_score()
 
 func get_entity_type():
 	return EntityRoles.role

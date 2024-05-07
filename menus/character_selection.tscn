@@ -3,7 +3,13 @@
 [ext_resource type="Script" path="res://menus/character_selection.gd" id="1_w650o"]
 [ext_resource type="Texture2D" uid="uid://bvan5tlj03jk8" path="res://game_assets/Background/Blue Ocean Sky.png" id="2_sj5up"]
 
-[node name="character_selection" type="Node2D"]
+[node name="character_selection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_w650o")
 
 [node name="background" type="TextureRect" parent="."]
