@@ -1,18 +1,18 @@
 [gd_scene load_steps=18 format=3 uid="uid://c3gr16q08da75"]
 
 [ext_resource type="Script" path="res://entities/enemyWithTeam/red_ai_rock.gd" id="1_j21bd"]
-[ext_resource type="Texture2D" uid="uid://hldmrvyrqet5" path="res://game_assets/Character/Batu/Idle/batu-berdiri-1.png" id="2_ywmir"]
-[ext_resource type="Texture2D" uid="uid://lwkao3l5n03s" path="res://game_assets/Character/Batu/Idle/batu-berdiri-2.png" id="3_turm8"]
-[ext_resource type="Texture2D" uid="uid://b8oksf3dtoimo" path="res://game_assets/Character/Batu/Idle/batu-berdiri-3.png" id="4_a1lif"]
-[ext_resource type="Texture2D" uid="uid://dwc8wnxdrfk2n" path="res://game_assets/Character/Batu/Idle/batu-berdiri-4.png" id="5_xv0rv"]
-[ext_resource type="Texture2D" uid="uid://c70rc8w5ygtfd" path="res://game_assets/Character/Batu/Run/batu-lari-1.png" id="6_5t4bf"]
-[ext_resource type="Texture2D" uid="uid://ma1718kk3n47" path="res://game_assets/Character/Batu/Run/batu-lari-2.png" id="7_xppsl"]
-[ext_resource type="Texture2D" uid="uid://dae6eef7e7772" path="res://game_assets/Character/Batu/Run/batu-lari-3.png" id="8_8o4cb"]
-[ext_resource type="Texture2D" uid="uid://8fqniynonnd8" path="res://game_assets/Character/Batu/Run/batu-lari-4.png" id="9_tqcf7"]
-[ext_resource type="Texture2D" uid="uid://dsobo1rbpojbd" path="res://game_assets/Character/Batu/Run/batu-lari-5.png" id="10_ipamu"]
-[ext_resource type="Texture2D" uid="uid://cvrfxf7sm0svv" path="res://game_assets/Character/Batu/Run/batu-lari-6.png" id="11_b1nym"]
-[ext_resource type="Texture2D" uid="uid://desot5xc0tdif" path="res://game_assets/Character/Batu/Run/batu-lari-7.png" id="12_8oj35"]
-[ext_resource type="Texture2D" uid="uid://dswg0d5homfw1" path="res://game_assets/Character/Batu/Run/batu-lari-8.png" id="13_ija3g"]
+[ext_resource type="Texture2D" uid="uid://bdyp62c4jl5ls" path="res://RPS_T_Asset/revisi berdiri merah/batu-berdiri-1-fotor-20240322223338.png" id="2_e5pxl"]
+[ext_resource type="Texture2D" uid="uid://cbatby26mtuqc" path="res://RPS_T_Asset/revisi berdiri merah/batu-berdiri-2-fotor-20240322223534.png" id="3_ftfpg"]
+[ext_resource type="Texture2D" uid="uid://b1u6hqgtn5rgf" path="res://RPS_T_Asset/revisi berdiri merah/batu-berdiri-3-fotor-20240322223717.png" id="4_eq575"]
+[ext_resource type="Texture2D" uid="uid://c13h1mes1pvtv" path="res://RPS_T_Asset/revisi berdiri merah/batu-berdiri-4-fotor-20240322223831.png" id="5_d3c2v"]
+[ext_resource type="Texture2D" uid="uid://cke2r0h76ugpy" path="res://RPS_T_Asset/revisi lari merah/batu-lari-1-fotor-20240322225343.png" id="6_m5vwq"]
+[ext_resource type="Texture2D" uid="uid://brfbdlychm30g" path="res://RPS_T_Asset/revisi lari merah/batu-lari-2-fotor-20240322225458.png" id="7_gylb8"]
+[ext_resource type="Texture2D" uid="uid://cg1o5hcsol4xb" path="res://RPS_T_Asset/revisi lari merah/batu-lari-3-fotor-2024032222564.png" id="8_p4fga"]
+[ext_resource type="Texture2D" uid="uid://cmcf6txohi2v3" path="res://RPS_T_Asset/revisi lari merah/batu-lari-4-fotor-20240322225737.png" id="9_aptni"]
+[ext_resource type="Texture2D" uid="uid://cv6d1rmml235a" path="res://RPS_T_Asset/revisi lari merah/batu-lari-5-fotor-20240322225940.png" id="10_lsfr6"]
+[ext_resource type="Texture2D" uid="uid://do705ct3ohqsj" path="res://RPS_T_Asset/revisi lari merah/batu-lari-6-fotor-202403222310.png" id="11_58h4i"]
+[ext_resource type="Texture2D" uid="uid://b7se3xc1pbuxq" path="res://RPS_T_Asset/revisi lari merah/batu-lari-7-fotor-2024032223214.png" id="12_ngsj2"]
+[ext_resource type="Texture2D" uid="uid://bnlipj8gbb101" path="res://RPS_T_Asset/revisi lari merah/batu-lari-8-fotor-2024032223455.png" id="13_vdhe1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1uj1o"]
 size = Vector2(32, 32)
@@ -21,19 +21,16 @@ size = Vector2(32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_ywmir")
+"texture": ExtResource("2_e5pxl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_turm8")
+"texture": ExtResource("3_ftfpg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_a1lif")
+"texture": ExtResource("4_eq575")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_xv0rv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_ywmir")
+"texture": ExtResource("5_d3c2v")
 }],
 "loop": true,
 "name": &"idle",
@@ -41,28 +38,28 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_5t4bf")
+"texture": ExtResource("6_m5vwq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_xppsl")
+"texture": ExtResource("7_gylb8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_8o4cb")
+"texture": ExtResource("8_p4fga")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_tqcf7")
+"texture": ExtResource("9_aptni")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_ipamu")
+"texture": ExtResource("10_lsfr6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_b1nym")
+"texture": ExtResource("11_58h4i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_8oj35")
+"texture": ExtResource("12_ngsj2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_ija3g")
+"texture": ExtResource("13_vdhe1")
 }],
 "loop": true,
 "name": &"run",
@@ -79,14 +76,17 @@ size = Vector2(34, 34)
 script = ExtResource("1_j21bd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource("RectangleShape2D_1uj1o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -1)
 scale = Vector2(0.035, 0.035)
 sprite_frames = SubResource("SpriteFrames_trdin")
-animation = &"idle"
+animation = &"run"
 autoplay = "idle"
+frame = 1
+frame_progress = 0.844581
 
 [node name="PlayerDetection" type="Area2D" parent="."]
 visible = false
@@ -97,6 +97,7 @@ shape = SubResource("CircleShape2D_r5x3p")
 [node name="PlayerDeath" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDeath"]
+visible = false
 shape = SubResource("RectangleShape2D_8kxel")
 
 [connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]

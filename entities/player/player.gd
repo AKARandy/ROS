@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 150
+const SPEED = 100
 const ACCELERATION = 950
 const FRICTION = 625
 
@@ -36,24 +36,40 @@ func increase_score():
 	print("Score: ", score)
 	
 func idle_animated_sprite():
-	var animations = {
-		EntityRoles.Roles.ROCK: "idle_rock",
-		EntityRoles.Roles.PAPER: "idle_paper",
-		EntityRoles.Roles.SCISSOR: "idle_scissor"
-	}
-	
-	if EntityRoles.role in animations.keys():
-		_animated_sprite.play(animations[EntityRoles.role])
-		
+	if EntityRoles.team == EntityRoles.Team.Blue:
+		var animations = {
+			EntityRoles.Roles.ROCK: "blue_idle_rock",
+			EntityRoles.Roles.PAPER: "blue_idle_paper",
+			EntityRoles.Roles.SCISSOR: "blue_idle_scissor"
+		}
+		if EntityRoles.role in animations.keys():
+			_animated_sprite.play(animations[EntityRoles.role])
+			
+	if EntityRoles.team == EntityRoles.Team.Red:
+		var animations = {
+			EntityRoles.Roles.ROCK: "red_idle_rock",
+			EntityRoles.Roles.PAPER: "red_idle_paper",
+			EntityRoles.Roles.SCISSOR: "red_idle_scissor"
+		}
+		if EntityRoles.role in animations.keys():
+			_animated_sprite.play(animations[EntityRoles.role])
 func run_animated_sprite():
-	var animations = {
-		EntityRoles.Roles.ROCK: "run_rock",
-		EntityRoles.Roles.PAPER: "run_paper",
-		EntityRoles.Roles.SCISSOR: "run_scissor"
-	}
-	
-	if EntityRoles.role in animations.keys():
-		_animated_sprite.play(animations[EntityRoles.role])
+	if EntityRoles.team == EntityRoles.Team.Blue:
+		var animations = {
+			EntityRoles.Roles.ROCK: "blue_run_rock",
+			EntityRoles.Roles.PAPER: "blue_run_paper",
+			EntityRoles.Roles.SCISSOR: "blue_run_scissor"
+		}
+		if EntityRoles.role in animations.keys():
+			_animated_sprite.play(animations[EntityRoles.role])
+	if EntityRoles.team == EntityRoles.Team.Red:
+		var animations = {
+			EntityRoles.Roles.ROCK: "red_run_rock",
+			EntityRoles.Roles.PAPER: "red_run_paper",
+			EntityRoles.Roles.SCISSOR: "red_run_scissor"
+		}
+		if EntityRoles.role in animations.keys():
+			_animated_sprite.play(animations[EntityRoles.role])
 
 func direction_animated_sprite(direction):
 	if direction < Vector2.ZERO:

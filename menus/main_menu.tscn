@@ -1,10 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://bwhakpwe60a57"]
+[gd_scene load_steps=13 format=3 uid="uid://bwhakpwe60a57"]
 
 [ext_resource type="Texture2D" uid="uid://wbg8ldujwbfe" path="res://RPS_T_Asset/main menu tanpa tittle.png" id="1_m2njp"]
+[ext_resource type="Script" path="res://menus/main_menu.gd" id="1_xdbhf"]
 [ext_resource type="Texture2D" uid="uid://bjh18mvlws3jj" path="res://RPS_T_Asset/title.png" id="2_6psjw"]
 [ext_resource type="Texture2D" uid="uid://i0vt5egj6ejc" path="res://RPS_T_Asset/play ui.png" id="3_5mjck"]
+[ext_resource type="Texture2D" uid="uid://dosjffow4xfqp" path="res://RPS_T_Asset/play ui-pressed.png" id="4_7oawh"]
 [ext_resource type="Texture2D" uid="uid://74227tandp1" path="res://RPS_T_Asset/credits ui.png" id="4_db5cd"]
+[ext_resource type="Texture2D" uid="uid://ciddj0icofta6" path="res://RPS_T_Asset/play ui-hovered.png" id="5_1c4ts"]
 [ext_resource type="Texture2D" uid="uid://c3jtxrb01qpr2" path="res://RPS_T_Asset/exit ui.png" id="5_13ho6"]
+[ext_resource type="Texture2D" uid="uid://bxenf2bekawy8" path="res://RPS_T_Asset/credits ui-hovered.png" id="7_pydnd"]
+[ext_resource type="Texture2D" uid="uid://v1orrgcvgdo6" path="res://RPS_T_Asset/credits ui-pressed.png" id="7_tfv7t"]
+[ext_resource type="Texture2D" uid="uid://cn3l01ll5hjjy" path="res://RPS_T_Asset/exit ui-hovered.png" id="8_cw3u2"]
+[ext_resource type="Texture2D" uid="uid://wkghxx0jtvet" path="res://RPS_T_Asset/exit ui-pressed.png" id="10_gjxyu"]
 
 [node name="main_menu" type="Control"]
 layout_mode = 3
@@ -13,6 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_xdbhf")
 
 [node name="background" type="TextureRect" parent="."]
 layout_mode = 1
@@ -61,6 +69,8 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("3_5mjck")
+texture_pressed = ExtResource("4_7oawh")
+texture_hover = ExtResource("5_1c4ts")
 
 [node name="Seperator2" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -70,6 +80,8 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("4_db5cd")
+texture_pressed = ExtResource("7_tfv7t")
+texture_hover = ExtResource("7_pydnd")
 
 [node name="Seperator3" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -79,3 +91,8 @@ layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("5_13ho6")
+texture_pressed = ExtResource("10_gjxyu")
+texture_hover = ExtResource("8_cw3u2")
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

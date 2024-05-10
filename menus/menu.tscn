@@ -1,6 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://cw1pcpj6rkthb"]
+[gd_scene load_steps=6 format=3 uid="uid://c1klmgfofb7x6"]
 
-[ext_resource type="Script" path="res://menus/menu.gd" id="1_owq54"]
+[sub_resource type="GDScript" id="GDScript_6cqn3"]
+script/source = "extends Control
+
+
+
+
+func _on_play_pressed():
+	get_tree().change_scene_to_file(\"res://menus/character_selection.tscn\")
+
+func _on_quit_pressed():
+	get_tree().quit()
+"
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_204ak"]
 bg_color = Color(0, 0, 0, 0.392157)
@@ -40,7 +51,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_owq54")
+script = SubResource("GDScript_6cqn3")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0

@@ -1,18 +1,18 @@
 [gd_scene load_steps=18 format=3 uid="uid://dvwi1w04r22pd"]
 
 [ext_resource type="Script" path="res://entities/enemyWithTeam/blue_ai_paper.gd" id="1_wug5u"]
-[ext_resource type="Texture2D" uid="uid://c5128ghuof43c" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-1.png" id="2_2b6vc"]
-[ext_resource type="Texture2D" uid="uid://b8yw2wbd5gga5" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-2.png" id="3_hqweg"]
-[ext_resource type="Texture2D" uid="uid://bqbsd7pudlju0" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-3.png" id="4_bibdu"]
-[ext_resource type="Texture2D" uid="uid://cis1eyfv5ubva" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-4.png" id="5_xishv"]
-[ext_resource type="Texture2D" uid="uid://4tcy6xmfjco6" path="res://game_assets/Character/Kertas/Run/kertas-lari-1.png" id="6_uu3f8"]
-[ext_resource type="Texture2D" uid="uid://defqjpb0sts6x" path="res://game_assets/Character/Kertas/Run/kertas-lari-2.png" id="7_4t8ai"]
-[ext_resource type="Texture2D" uid="uid://d0mvh3t8o1m3j" path="res://game_assets/Character/Kertas/Run/kertas-lari-3.png" id="8_55i5f"]
-[ext_resource type="Texture2D" uid="uid://bpopykephehe0" path="res://game_assets/Character/Kertas/Run/kertas-lari-4.png" id="9_4bt3j"]
-[ext_resource type="Texture2D" uid="uid://un24pfocxkeg" path="res://game_assets/Character/Kertas/Run/kertas-lari-5.png" id="10_kam38"]
-[ext_resource type="Texture2D" uid="uid://dfvb6xcr7h5jd" path="res://game_assets/Character/Kertas/Run/kertas-lari-6.png" id="11_jh2xo"]
-[ext_resource type="Texture2D" uid="uid://d3td0m5xk868a" path="res://game_assets/Character/Kertas/Run/kertas-lari-7.png" id="12_ruea6"]
-[ext_resource type="Texture2D" uid="uid://bs77qacerhtnr" path="res://game_assets/Character/Kertas/Run/kertas-lari-8.png" id="13_de5n5"]
+[ext_resource type="Texture2D" uid="uid://dj50dp8obfo4" path="res://RPS_T_Asset/revisi berdiri biru/kertas-berdiri-1-fotor-20240322224436.png" id="2_5ol6b"]
+[ext_resource type="Texture2D" uid="uid://comam4lbvcov3" path="res://RPS_T_Asset/revisi berdiri biru/kertas-berdiri-2-fotor-20240322224540.png" id="3_4udjm"]
+[ext_resource type="Texture2D" uid="uid://wa3xcj7utn6k" path="res://RPS_T_Asset/revisi berdiri biru/kertas-berdiri-3-fotor-20240322224646.png" id="4_6nvea"]
+[ext_resource type="Texture2D" uid="uid://owwfl7w6nbc1" path="res://RPS_T_Asset/revisi berdiri biru/kertas-berdiri-4-fotor-20240322224758.png" id="5_6l2an"]
+[ext_resource type="Texture2D" uid="uid://bld78gphmric4" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-1-fotor-20240510153848.png" id="6_m00tn"]
+[ext_resource type="Texture2D" uid="uid://cc8sr2jwqopyl" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-2-fotor-20240510153933.png" id="7_0g3ip"]
+[ext_resource type="Texture2D" uid="uid://cjrwrxeoerwgg" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-3-fotor-2024051015390.png" id="8_scsul"]
+[ext_resource type="Texture2D" uid="uid://cksucgxhca38u" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-4-fotor-20240510153729.png" id="9_jdawj"]
+[ext_resource type="Texture2D" uid="uid://cqi450jfp188y" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-5-fotor-2024051015387.png" id="10_pebxf"]
+[ext_resource type="Texture2D" uid="uid://cj4elt8oe3obs" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-6-fotor-20240510153820.png" id="11_dbfms"]
+[ext_resource type="Texture2D" uid="uid://cewguf5ljgufd" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-7-fotor-20240510153922.png" id="12_dsm5h"]
+[ext_resource type="Texture2D" uid="uid://b4nkgpstajf0d" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-8-fotor-20240510153833.png" id="13_sgjyu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f0byj"]
 size = Vector2(32, 32)
@@ -21,16 +21,16 @@ size = Vector2(32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_2b6vc")
+"texture": ExtResource("2_5ol6b")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_hqweg")
+"texture": ExtResource("3_4udjm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_bibdu")
+"texture": ExtResource("4_6nvea")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_xishv")
+"texture": ExtResource("5_6l2an")
 }],
 "loop": true,
 "name": &"idle",
@@ -38,28 +38,28 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_uu3f8")
+"texture": ExtResource("6_m00tn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_4t8ai")
+"texture": ExtResource("7_0g3ip")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_55i5f")
+"texture": ExtResource("8_scsul")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_4bt3j")
+"texture": ExtResource("9_jdawj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_kam38")
+"texture": ExtResource("10_pebxf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_jh2xo")
+"texture": ExtResource("11_dbfms")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_ruea6")
+"texture": ExtResource("12_dsm5h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_de5n5")
+"texture": ExtResource("13_sgjyu")
 }],
 "loop": true,
 "name": &"run",
@@ -84,6 +84,7 @@ scale = Vector2(0.035, 0.035)
 sprite_frames = SubResource("SpriteFrames_w83ex")
 animation = &"idle"
 autoplay = "idle"
+frame_progress = 0.869724
 
 [node name="PlayerDetection" type="Area2D" parent="."]
 visible = false

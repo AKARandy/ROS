@@ -1,48 +1,238 @@
-[gd_scene load_steps=41 format=3 uid="uid://b8m5c7mw465d"]
+[gd_scene load_steps=99 format=3 uid="uid://b8m5c7mw465d"]
 
 [ext_resource type="Script" path="res://entities/player/player.gd" id="1_8m1xs"]
+[ext_resource type="Texture2D" uid="uid://dj50dp8obfo4" path="res://RPS_T_Asset/revisi berdiri biru/kertas-berdiri-1-fotor-20240322224436.png" id="2_a0t4v"]
 [ext_resource type="Texture2D" uid="uid://c5128ghuof43c" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-1.png" id="2_bi1pa"]
 [ext_resource type="Texture2D" uid="uid://b8yw2wbd5gga5" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-2.png" id="3_7ip80"]
+[ext_resource type="Texture2D" uid="uid://comam4lbvcov3" path="res://RPS_T_Asset/revisi berdiri biru/kertas-berdiri-2-fotor-20240322224540.png" id="3_cjpo0"]
 [ext_resource type="Texture2D" uid="uid://bqbsd7pudlju0" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-3.png" id="4_3tx2q"]
+[ext_resource type="Texture2D" uid="uid://wa3xcj7utn6k" path="res://RPS_T_Asset/revisi berdiri biru/kertas-berdiri-3-fotor-20240322224646.png" id="4_ohoye"]
+[ext_resource type="Texture2D" uid="uid://owwfl7w6nbc1" path="res://RPS_T_Asset/revisi berdiri biru/kertas-berdiri-4-fotor-20240322224758.png" id="5_b3mmd"]
 [ext_resource type="Texture2D" uid="uid://cis1eyfv5ubva" path="res://game_assets/Character/Kertas/Idle/kertas-berdiri-4.png" id="5_bs2r4"]
 [ext_resource type="Texture2D" uid="uid://hldmrvyrqet5" path="res://game_assets/Character/Batu/Idle/batu-berdiri-1.png" id="6_kf04p"]
+[ext_resource type="Texture2D" uid="uid://4eyauxwvj6ep" path="res://RPS_T_Asset/revisi berdiri biru/batu-berdiri-1-fotor-20240322223422.png" id="6_yvsq4"]
 [ext_resource type="Texture2D" uid="uid://lwkao3l5n03s" path="res://game_assets/Character/Batu/Idle/batu-berdiri-2.png" id="7_30tlb"]
+[ext_resource type="Texture2D" uid="uid://c4w4yh7130t8i" path="res://RPS_T_Asset/revisi berdiri biru/batu-berdiri-2-fotor-2024032222363.png" id="7_hspkj"]
 [ext_resource type="Texture2D" uid="uid://b8oksf3dtoimo" path="res://game_assets/Character/Batu/Idle/batu-berdiri-3.png" id="8_gemn1"]
+[ext_resource type="Texture2D" uid="uid://b4h3rdm6sbsi4" path="res://RPS_T_Asset/revisi berdiri biru/batu-berdiri-3-fotor-20240322223749.png" id="8_jldjw"]
+[ext_resource type="Texture2D" uid="uid://cvegqvrsrkso4" path="res://RPS_T_Asset/revisi berdiri biru/batu-berdiri-4-fotor-20240322223856.png" id="9_a03m1"]
 [ext_resource type="Texture2D" uid="uid://dwc8wnxdrfk2n" path="res://game_assets/Character/Batu/Idle/batu-berdiri-4.png" id="9_jnaj6"]
 [ext_resource type="Texture2D" uid="uid://b07qcfbf1ny08" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-1.png" id="10_kfw5q"]
+[ext_resource type="Texture2D" uid="uid://dfp64msslpe7r" path="res://RPS_T_Asset/revisi berdiri biru/gunting-berdiri-1-fotor-2024032222405.png" id="10_ofvl3"]
 [ext_resource type="Texture2D" uid="uid://bcmfv6hu5bilt" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-2.png" id="11_o6op3"]
+[ext_resource type="Texture2D" uid="uid://d2a5f7x8vaglv" path="res://RPS_T_Asset/revisi berdiri biru/gunting-berdiri-2-fotor-20240322224120.png" id="11_t2tw0"]
 [ext_resource type="Texture2D" uid="uid://btv2jb8laccf2" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-3.png" id="12_26wf1"]
+[ext_resource type="Texture2D" uid="uid://cdsj8hg0kfxmu" path="res://RPS_T_Asset/revisi berdiri biru/gunting-berdiri-3-fotor-20240322224225.png" id="12_ug5qy"]
+[ext_resource type="Texture2D" uid="uid://d04vq1vxtipur" path="res://RPS_T_Asset/revisi berdiri biru/gunting-berdiri-4-fotor-20240322224332.png" id="13_va7w6"]
 [ext_resource type="Texture2D" uid="uid://dbpjfy801oeg8" path="res://game_assets/Character/Gunting/Idle/gunting-berdiri-4.png" id="13_x7l3h"]
+[ext_resource type="Texture2D" uid="uid://bld78gphmric4" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-1-fotor-20240510153848.png" id="14_6ftcg"]
 [ext_resource type="Texture2D" uid="uid://4tcy6xmfjco6" path="res://game_assets/Character/Kertas/Run/kertas-lari-1.png" id="14_q1vrl"]
 [ext_resource type="Texture2D" uid="uid://defqjpb0sts6x" path="res://game_assets/Character/Kertas/Run/kertas-lari-2.png" id="15_3n32q"]
+[ext_resource type="Texture2D" uid="uid://cc8sr2jwqopyl" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-2-fotor-20240510153933.png" id="15_iltwl"]
+[ext_resource type="Texture2D" uid="uid://cjrwrxeoerwgg" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-3-fotor-2024051015390.png" id="16_4d15c"]
 [ext_resource type="Texture2D" uid="uid://d0mvh3t8o1m3j" path="res://game_assets/Character/Kertas/Run/kertas-lari-3.png" id="16_k6isn"]
 [ext_resource type="Texture2D" uid="uid://bpopykephehe0" path="res://game_assets/Character/Kertas/Run/kertas-lari-4.png" id="17_alpo6"]
+[ext_resource type="Texture2D" uid="uid://cksucgxhca38u" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-4-fotor-20240510153729.png" id="17_ocore"]
 [ext_resource type="Texture2D" uid="uid://un24pfocxkeg" path="res://game_assets/Character/Kertas/Run/kertas-lari-5.png" id="18_j3jni"]
+[ext_resource type="Texture2D" uid="uid://cqi450jfp188y" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-5-fotor-2024051015387.png" id="18_lo4sl"]
 [ext_resource type="Texture2D" uid="uid://dfvb6xcr7h5jd" path="res://game_assets/Character/Kertas/Run/kertas-lari-6.png" id="19_t7dg2"]
+[ext_resource type="Texture2D" uid="uid://cj4elt8oe3obs" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-6-fotor-20240510153820.png" id="19_vu0uo"]
 [ext_resource type="Texture2D" uid="uid://d3td0m5xk868a" path="res://game_assets/Character/Kertas/Run/kertas-lari-7.png" id="20_1mr1f"]
+[ext_resource type="Texture2D" uid="uid://cewguf5ljgufd" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-7-fotor-20240510153922.png" id="20_x47jo"]
+[ext_resource type="Texture2D" uid="uid://b4nkgpstajf0d" path="res://RPS_T_Asset/revisi lari biru/kertas-lari-8-fotor-20240510153833.png" id="21_78vm5"]
 [ext_resource type="Texture2D" uid="uid://bs77qacerhtnr" path="res://game_assets/Character/Kertas/Run/kertas-lari-8.png" id="21_ppnnb"]
 [ext_resource type="Texture2D" uid="uid://c70rc8w5ygtfd" path="res://game_assets/Character/Batu/Run/batu-lari-1.png" id="22_aoyv1"]
+[ext_resource type="Texture2D" uid="uid://cmxw71nebdg7l" path="res://RPS_T_Asset/revisi lari biru/batu-lari-1-fotor-20240322225413.png" id="22_key4s"]
+[ext_resource type="Texture2D" uid="uid://cfl7wkfgnuk37" path="res://RPS_T_Asset/revisi lari biru/batu-lari-2-fotor-20240322225527.png" id="23_5io46"]
 [ext_resource type="Texture2D" uid="uid://ma1718kk3n47" path="res://game_assets/Character/Batu/Run/batu-lari-2.png" id="23_ccm4o"]
 [ext_resource type="Texture2D" uid="uid://dae6eef7e7772" path="res://game_assets/Character/Batu/Run/batu-lari-3.png" id="24_dhldn"]
+[ext_resource type="Texture2D" uid="uid://cooivsbixy1m1" path="res://RPS_T_Asset/revisi lari biru/batu-lari-3-fotor-20240322225642.png" id="24_ljfed"]
+[ext_resource type="Texture2D" uid="uid://e8xldycknpca" path="res://RPS_T_Asset/revisi lari biru/batu-lari-4-fotor-2024032222586.png" id="25_bh55o"]
 [ext_resource type="Texture2D" uid="uid://8fqniynonnd8" path="res://game_assets/Character/Batu/Run/batu-lari-4.png" id="25_kbuxf"]
 [ext_resource type="Texture2D" uid="uid://dsobo1rbpojbd" path="res://game_assets/Character/Batu/Run/batu-lari-5.png" id="26_03q7e"]
+[ext_resource type="Texture2D" uid="uid://cirsk530pbqhs" path="res://RPS_T_Asset/revisi lari biru/batu-lari-5-fotor-2024032223013.png" id="26_cgenl"]
 [ext_resource type="Texture2D" uid="uid://cvrfxf7sm0svv" path="res://game_assets/Character/Batu/Run/batu-lari-6.png" id="27_j24lj"]
+[ext_resource type="Texture2D" uid="uid://da1ftq6ocmh7" path="res://RPS_T_Asset/revisi lari biru/batu-lari-6-fotor-2024032223132.png" id="27_sfwux"]
 [ext_resource type="Texture2D" uid="uid://desot5xc0tdif" path="res://game_assets/Character/Batu/Run/batu-lari-7.png" id="28_0uga8"]
+[ext_resource type="Texture2D" uid="uid://dpfqjj3emqkxf" path="res://RPS_T_Asset/revisi lari biru/batu-lari-7-fotor-2024032223249.png" id="28_1nde7"]
+[ext_resource type="Texture2D" uid="uid://c7hyx6uu7omkq" path="res://RPS_T_Asset/revisi lari biru/batu-lari-8-fotor-2024032223525.png" id="29_at72l"]
 [ext_resource type="Texture2D" uid="uid://dswg0d5homfw1" path="res://game_assets/Character/Batu/Run/batu-lari-8.png" id="29_db5so"]
 [ext_resource type="Texture2D" uid="uid://dg8076b7tm6l0" path="res://game_assets/Character/Gunting/Run/gunting-lari-1.png" id="30_071ix"]
+[ext_resource type="Texture2D" uid="uid://bvcfvqrckmx87" path="res://RPS_T_Asset/revisi lari biru/gunting-lari-2-fotor-2024032223930.png" id="30_ospmx"]
 [ext_resource type="Texture2D" uid="uid://d0ml7g5c5e4s7" path="res://game_assets/Character/Gunting/Run/gunting-lari-2.png" id="31_edii5"]
+[ext_resource type="Texture2D" uid="uid://c00f71jmflkue" path="res://RPS_T_Asset/revisi lari biru/gunting-lari-3-fotor-20240322231049.png" id="31_g0ow2"]
+[ext_resource type="Texture2D" uid="uid://cglv1qlj17oog" path="res://RPS_T_Asset/revisi lari biru/gunting-lari-4-fotor-20240322231229.png" id="32_hd1rn"]
 [ext_resource type="Texture2D" uid="uid://cu5a34cve71aa" path="res://game_assets/Character/Gunting/Run/gunting-lari-3.png" id="32_jlv30"]
+[ext_resource type="Texture2D" uid="uid://c0wbdcyqxxsh1" path="res://RPS_T_Asset/revisi lari biru/gunting-lari-5-fotor-20240322231341.png" id="33_i8udy"]
 [ext_resource type="Texture2D" uid="uid://c6lumdbt263u3" path="res://game_assets/Character/Gunting/Run/gunting-lari-4.png" id="33_yviku"]
 [ext_resource type="Texture2D" uid="uid://l4vb8cewv0aq" path="res://game_assets/Character/Gunting/Run/gunting-lari-5.png" id="34_2wndb"]
+[ext_resource type="Texture2D" uid="uid://bhub7tvh300ie" path="res://RPS_T_Asset/revisi lari biru/gunting-lari-6-fotor-20240322231456.png" id="34_jfd2f"]
 [ext_resource type="Texture2D" uid="uid://bcf0cym2rbaho" path="res://game_assets/Character/Gunting/Run/gunting-lari-6.png" id="35_bdd1e"]
+[ext_resource type="Texture2D" uid="uid://in3dqn7rokv" path="res://RPS_T_Asset/revisi lari biru/gunting-lari-7-fotor-20240322231611.png" id="35_blvru"]
 [ext_resource type="Texture2D" uid="uid://b3o3naq8rww4c" path="res://game_assets/Character/Gunting/Run/gunting-lari-7.png" id="36_vu14u"]
 [ext_resource type="Texture2D" uid="uid://ct4cq10kyul3" path="res://game_assets/Character/Gunting/Run/gunting-lari-8.png" id="37_hcbu1"]
+[ext_resource type="Texture2D" uid="uid://bkjxor11cshik" path="res://RPS_T_Asset/revisi berdiri merah/kertas-berdiri-1-fotor-20240322224411.png" id="48_ncjt3"]
+[ext_resource type="Texture2D" uid="uid://bknp735ccslcu" path="res://RPS_T_Asset/revisi berdiri merah/kertas-berdiri-2-fotor-20240322224517.png" id="49_06fvx"]
+[ext_resource type="Texture2D" uid="uid://cq51ipsyx4bs8" path="res://RPS_T_Asset/revisi berdiri merah/kertas-berdiri-3-fotor-20240322224615.png" id="50_7ivl8"]
+[ext_resource type="Texture2D" uid="uid://dhfgyd153vsqk" path="res://RPS_T_Asset/revisi berdiri merah/kertas-berdiri-4-fotor-20240322224728.png" id="51_kcmol"]
+[ext_resource type="Texture2D" uid="uid://bdyp62c4jl5ls" path="res://RPS_T_Asset/revisi berdiri merah/batu-berdiri-1-fotor-20240322223338.png" id="52_l6kpp"]
+[ext_resource type="Texture2D" uid="uid://cbatby26mtuqc" path="res://RPS_T_Asset/revisi berdiri merah/batu-berdiri-2-fotor-20240322223534.png" id="53_v62vx"]
+[ext_resource type="Texture2D" uid="uid://b1u6hqgtn5rgf" path="res://RPS_T_Asset/revisi berdiri merah/batu-berdiri-3-fotor-20240322223717.png" id="54_umgrb"]
+[ext_resource type="Texture2D" uid="uid://c13h1mes1pvtv" path="res://RPS_T_Asset/revisi berdiri merah/batu-berdiri-4-fotor-20240322223831.png" id="55_rik1b"]
+[ext_resource type="Texture2D" uid="uid://dx8wgc8vum76y" path="res://RPS_T_Asset/revisi lari merah/kertas-lari-1-fotor-20240510154344.png" id="56_wi0p2"]
+[ext_resource type="Texture2D" uid="uid://ddsdb3sj5vo0" path="res://RPS_T_Asset/revisi lari merah/kertas-lari-2-fotor-20240510154419.png" id="57_j3ona"]
+[ext_resource type="Texture2D" uid="uid://uv8638v6scnb" path="res://RPS_T_Asset/revisi lari merah/kertas-lari-3-fotor-20240510154428.png" id="58_ci1pv"]
+[ext_resource type="Texture2D" uid="uid://n4hlp2y3qr57" path="res://RPS_T_Asset/revisi lari merah/kertas-lari-4-fotor-20240510154440.png" id="59_aidm8"]
+[ext_resource type="Texture2D" uid="uid://on7fm6inv1qn" path="res://RPS_T_Asset/revisi lari merah/kertas-lari-5-fotor-20240510154449.png" id="60_yitfy"]
+[ext_resource type="Texture2D" uid="uid://djjyx3c6xu6k2" path="res://RPS_T_Asset/revisi lari merah/kertas-lari-6-fotor-2024051015443.png" id="61_kbq7e"]
+[ext_resource type="Texture2D" uid="uid://b5ids4j0uwjx8" path="res://RPS_T_Asset/revisi lari merah/kertas-lari-7-fotor-2024051015450.png" id="62_bnmoa"]
+[ext_resource type="Texture2D" uid="uid://b6f6a1e8qjb5k" path="res://RPS_T_Asset/revisi lari merah/kertas-lari-8-fotor-20240510154538.png" id="63_m37pf"]
+[ext_resource type="Texture2D" uid="uid://cke2r0h76ugpy" path="res://RPS_T_Asset/revisi lari merah/batu-lari-1-fotor-20240322225343.png" id="64_j2y4w"]
+[ext_resource type="Texture2D" uid="uid://brfbdlychm30g" path="res://RPS_T_Asset/revisi lari merah/batu-lari-2-fotor-20240322225458.png" id="65_ia5ae"]
+[ext_resource type="Texture2D" uid="uid://cg1o5hcsol4xb" path="res://RPS_T_Asset/revisi lari merah/batu-lari-3-fotor-2024032222564.png" id="66_5r026"]
+[ext_resource type="Texture2D" uid="uid://cmcf6txohi2v3" path="res://RPS_T_Asset/revisi lari merah/batu-lari-4-fotor-20240322225737.png" id="67_xceul"]
+[ext_resource type="Texture2D" uid="uid://cv6d1rmml235a" path="res://RPS_T_Asset/revisi lari merah/batu-lari-5-fotor-20240322225940.png" id="68_m0pt5"]
+[ext_resource type="Texture2D" uid="uid://do705ct3ohqsj" path="res://RPS_T_Asset/revisi lari merah/batu-lari-6-fotor-202403222310.png" id="69_vdkue"]
+[ext_resource type="Texture2D" uid="uid://b7se3xc1pbuxq" path="res://RPS_T_Asset/revisi lari merah/batu-lari-7-fotor-2024032223214.png" id="70_v1fvb"]
+[ext_resource type="Texture2D" uid="uid://bnlipj8gbb101" path="res://RPS_T_Asset/revisi lari merah/batu-lari-8-fotor-2024032223455.png" id="71_mk4r4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sly2l"]
 size = Vector2(32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nid7a"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a0t4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cjpo0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ohoye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_b3mmd")
+}],
+"loop": true,
+"name": &"blue_idle_paper",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_yvsq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hspkj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jldjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_a03m1")
+}],
+"loop": true,
+"name": &"blue_idle_rock",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_ofvl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_t2tw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ug5qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_va7w6")
+}],
+"loop": true,
+"name": &"blue_idle_scissor",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_6ftcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_iltwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4d15c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ocore")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_lo4sl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_vu0uo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_x47jo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_78vm5")
+}],
+"loop": true,
+"name": &"blue_run_paper",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_key4s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_5io46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ljfed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_bh55o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_cgenl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_sfwux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_1nde7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_at72l")
+}],
+"loop": true,
+"name": &"blue_run_rock",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_ospmx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_g0ow2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_hd1rn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_i8udy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_jfd2f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_blvru")
+}],
+"loop": true,
+"name": &"blue_run_scissor",
+"speed": 9.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_bi1pa")
@@ -93,6 +283,144 @@ animations = [{
 "loop": true,
 "name": &"idle_scissor",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("48_ncjt3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_06fvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_7ivl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_kcmol")
+}],
+"loop": true,
+"name": &"red_idle_paper",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("52_l6kpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_v62vx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_umgrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_rik1b")
+}],
+"loop": true,
+"name": &"red_idle_rock",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_kfw5q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_o6op3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_26wf1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_x7l3h")
+}],
+"loop": true,
+"name": &"red_idle_scissor",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("56_wi0p2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_j3ona")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_ci1pv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_aidm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_yitfy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_kbq7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_bnmoa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_m37pf")
+}],
+"loop": true,
+"name": &"red_run_paper",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("64_j2y4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_ia5ae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_5r026")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_xceul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_m0pt5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_vdkue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_v1fvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_mk4r4")
+}],
+"loop": true,
+"name": &"red_run_rock",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_071ix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_edii5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_jlv30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_yviku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_2wndb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_bdd1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_vu14u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_hcbu1")
+}],
+"loop": true,
+"name": &"red_run_scissor",
+"speed": 9.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -196,8 +524,8 @@ shape = SubResource("RectangleShape2D_sly2l")
 position = Vector2(0, 9.53674e-07)
 scale = Vector2(0.035, 0.035)
 sprite_frames = SubResource("SpriteFrames_nid7a")
-animation = &"run_paper"
-frame_progress = 0.30983
+animation = &"red_run_scissor"
+frame_progress = 0.15895
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -206,6 +534,11 @@ shape = SubResource("RectangleShape2D_2d5d8")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
+limit_left = 0
+limit_top = 0
+limit_right = 1916
+limit_bottom = 1080
 limit_smoothed = true
+editor_draw_limits = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bh8tnw6jjdp2d"]
+[gd_scene load_steps=11 format=3 uid="uid://bh8tnw6jjdp2d"]
 
 [ext_resource type="Texture2D" uid="uid://bxqut1c00d5x7" path="res://RPS_T_Asset/Karya_Seni_Tanpa_Judul-37.png" id="1_e2mis"]
 [ext_resource type="Texture2D" uid="uid://bb7g0qosuqeg4" path="res://RPS_T_Asset/full 2-3 healthbar.png" id="2_2fmgk"]
@@ -40,15 +40,19 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_5abrb"]
+radius = 52.0096
+
 [node name="Maps2" type="Node2D"]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_top = 57.0
+offset_top = 2.0
 offset_right = 1920.0
-offset_bottom = 1137.0
+offset_bottom = 1082.0
 texture = ExtResource("1_e2mis")
 
 [node name="RedTower" type="StaticBody2D" parent="."]
+position = Vector2(0, -55)
 script = ExtResource("2_b2e3p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RedTower"]
@@ -68,7 +72,7 @@ sprite_frames = SubResource("SpriteFrames_x10pp")
 animation = &"dying"
 
 [node name="BlueTower" type="StaticBody2D" parent="."]
-position = Vector2(1285, -299)
+position = Vector2(1285, -354)
 script = ExtResource("6_yrsn3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BlueTower"]
@@ -86,6 +90,30 @@ position = Vector2(345, 755)
 scale = Vector2(0.833333, 1)
 sprite_frames = SubResource("SpriteFrames_x10pp")
 animation = &"dying"
+
+[node name="upperWall" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="upperWall"]
+position = Vector2(0, -55)
+polygon = PackedVector2Array(1, 54, 1917, 56, 1927, 198, 1679, 217, 1641, 158, 1550, 181, 1550, 158, 1510, 164, 1497, 137, 1398, 181, 1391, 258, 1345, 283, 1239, 228, 1120, 139, 804, 107, 531, 148, 495, 173, 802, 201, 442, 226, 175, 349, 175, 374, 442, 402, 194, 459, 164, 510, 209, 516, 147, 552, 152, 601, 33, 679, 48, 703, 120, 682, -1, 781)
+
+[node name="lowerLeftWall" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="lowerLeftWall"]
+position = Vector2(0, -55)
+polygon = PackedVector2Array(-2, 783, -1, 1143, 275, 1141, 31, 1039, 201, 912, 3, 890)
+
+[node name="rightWall" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="rightWall"]
+position = Vector2(0, -55)
+polygon = PackedVector2Array(274, 1134, 1931, 1143, 1931, 190, 1919, 360, 1821, 417, 1917, 465, 1925, 1080, 1674, 1135, 1436, 1137, 1517, 1076, 1507, 1056, 1213, 1052, 1155, 1014, 1170, 977, 1054, 1032, 1058, 1096, 1018, 1060, 910, 1088, 893, 1120, 822, 1120, 669, 1134)
+
+[node name="bonfire" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bonfire"]
+position = Vector2(982, 490)
+shape = SubResource("CircleShape2D_5abrb")
 
 [connection signal="body_entered" from="RedTower/PlayerTouched" to="RedTower" method="_on_player_touched_body_entered"]
 [connection signal="body_entered" from="BlueTower/PlayerTouched" to="BlueTower" method="_on_player_touched_body_entered"]
