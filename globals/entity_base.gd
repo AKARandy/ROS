@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var  ENTITY_TYPE: int = EntityRoles.Roles.UNKNOWN
 @export var  ENTITY_TEAM: int = EntityRoles.Team.UNKNOWN
 
-const SPEED: int = 100
+const SPEED: int = 75
 const CENTER: Vector2 = Vector2(450, 300)
 
 enum State { FLEEING, ROAMING }
@@ -43,7 +43,7 @@ func _physics_process(delta: float) -> void:
 						randf_range(0.0, get_viewport_rect().size.x),
 						randf_range(0.0, get_viewport_rect().size.y)
 					)
-					stuck_timer = 2
+					stuck_timer = 0
 				else:
 					target_velocity = position.direction_to(random_target_pos) * SPEED
 

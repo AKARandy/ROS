@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=3 uid="uid://ceapv181uvpqi"]
+
+[ext_resource type="Texture2D" uid="uid://bndxtrhn7yi5w" path="res://RPS_T_Asset/ornamen back to menu.png" id="1_aqm3e"]
+[ext_resource type="Script" path="res://menus/pause_menu.gd" id="1_qdqoc"]
+[ext_resource type="Texture2D" uid="uid://dqr5o7g84c1p0" path="res://RPS_T_Asset/ornamen play.png" id="2_amm3k"]
+[ext_resource type="Texture2D" uid="uid://bed61vnw4sxw7" path="res://RPS_T_Asset/restart.png" id="3_p024a"]
+
+[node name="pause_menu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qdqoc")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 1918.0
+offset_bottom = 77.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="home" type="TextureButton" parent="PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+texture_normal = ExtResource("1_aqm3e")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="resume" type="TextureButton" parent="PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+texture_normal = ExtResource("2_amm3k")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="restart" type="TextureButton" parent="PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 2
+texture_normal = ExtResource("3_p024a")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 886.0
+offset_top = -32.0
+offset_right = -824.0
+offset_bottom = 80.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 50
+text = "PAUSED"
+
+[connection signal="pressed" from="PanelContainer/HBoxContainer/home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="PanelContainer/HBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="PanelContainer/HBoxContainer/restart" to="." method="_on_restart_pressed"]

@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://oavvj4m4mlwn"]
 
 [ext_resource type="Script" path="res://scene/world.gd" id="1_3xabq"]
-[ext_resource type="PackedScene" uid="uid://b8m5c7mw465d" path="res://entities/player/player.tscn" id="2_01da0"]
-[ext_resource type="PackedScene" uid="uid://bh8tnw6jjdp2d" path="res://maps/maps2.tscn" id="2_7j3aa"]
+[ext_resource type="PackedScene" uid="uid://cv0qcjm6ivvva" path="res://maps/maps2.tscn" id="2_7j3aa"]
+[ext_resource type="PackedScene" uid="uid://ceapv181uvpqi" path="res://menus/pause_menu.tscn" id="3_nysgi"]
 
 [node name="World" type="Node2D"]
 script = ExtResource("1_3xabq")
@@ -10,11 +10,13 @@ script = ExtResource("1_3xabq")
 [node name="Maps2" parent="." instance=ExtResource("2_7j3aa")]
 position = Vector2(-4, 1)
 
-[node name="player" parent="." instance=ExtResource("2_01da0")]
-position = Vector2(434, 930)
-
 [node name="Mobs" type="Node2D" parent="."]
 
 [node name="SpawnTimer" type="Timer" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="pause_menu" parent="CanvasLayer" instance=ExtResource("3_nysgi")]
+visible = false
 
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_spawn_timer_timeout"]

@@ -86,6 +86,7 @@ sprite_frames = SubResource("SpriteFrames_w83ex")
 animation = &"run"
 autoplay = "idle"
 frame_progress = 0.918833
+flip_h = true
 
 [node name="PlayerDetection" type="Area2D" parent="."]
 visible = false

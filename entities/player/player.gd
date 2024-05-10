@@ -1,12 +1,13 @@
 extends CharacterBody2D
 
-const SPEED = 100
+const SPEED = 65
 const ACCELERATION = 950
 const FRICTION = 625
 
 var score = 0
 
 @onready var _animated_sprite = $AnimatedSprite2D
+var paused = false
 
 func _ready():
 	idle_animated_sprite()
@@ -98,3 +99,6 @@ func get_entity_type():
 
 func get_entity_team():
 	return EntityRoles.team
+	
+func _process(delta):
+	pass

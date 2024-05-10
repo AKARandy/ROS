@@ -79,6 +79,11 @@ offset_right = 1088.0
 offset_bottom = 600.0
 text = "Red Scissor"
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 320)
+zoom = Vector2(1.675, 1.675)
+editor_draw_limits = true
+
 [connection signal="pressed" from="rock_select" to="." method="_on_rock_select_pressed"]
 [connection signal="pressed" from="paper_select" to="." method="_on_paper_select_pressed"]
 [connection signal="pressed" from="scissor_select" to="." method="_on_scissor_select_pressed"]

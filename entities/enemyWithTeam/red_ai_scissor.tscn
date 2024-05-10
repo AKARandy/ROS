@@ -84,11 +84,11 @@ shape = SubResource("RectangleShape2D_bawak")
 position = Vector2(-1.19209e-07, -1)
 scale = Vector2(0.035, 0.035)
 sprite_frames = SubResource("SpriteFrames_v30ex")
-animation = &"idle"
+animation = &"run"
 autoplay = "idle"
+flip_h = true
 
 [node name="PlayerDetection" type="Area2D" parent="."]
-visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
 shape = SubResource("CircleShape2D_seej2")
