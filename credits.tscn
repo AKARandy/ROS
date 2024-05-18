@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://d02h2gj3ch72x"]
+
+[ext_resource type="Script" path="res://credits.gd" id="1_vhxuk"]
+[ext_resource type="Texture2D" uid="uid://bndxtrhn7yi5w" path="res://RPS_T_Asset/ornamen back to menu.png" id="2_5hsht"]
+
+[node name="credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vhxuk")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PanelContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 250)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 40
+text = "Programmer:
+- Alief Randiansyah Pradanaputra
+- Armel Patilani
+- Akmal Mahardika Nurwahyu Pratama
+"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="PanelContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 250)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 40
+text = "Arts:
+- Nabila freya 
+- Kezia Melanie
+
+"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="PanelContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 250)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 40
+text = "Writer:
+- Queennisa Lintang A:
+
+"
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="PanelContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 250)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 40
+text = "Game Design:
+- Alridho Tristan Satriawan
+"
+
+[node name="return" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 0
+offset_left = 1784.0
+offset_top = 972.0
+offset_right = 1920.0
+offset_bottom = 1082.0
+texture_normal = ExtResource("2_5hsht")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="return" to="." method="_on_return_pressed"]
